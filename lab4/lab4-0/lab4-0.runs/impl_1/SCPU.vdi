@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr 18 20:37:20 2023
+# Process ID: 10808
+# Current directory: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/impl_1
+# Command line: vivado.exe -log SCPU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SCPU.tcl -notrace
+# Log file: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/impl_1/SCPU.vdi
+# Journal file: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/impl_1\vivado.jou
+# Running On: yusux, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 33719 MB
+#-----------------------------------------------------------
+source SCPU.tcl -notrace
+Command: link_design -top SCPU -part xc7k160tffg676-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 842.559 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'SCPU' is not ideal for floorplanning, since the cellview 'Regs' defined in file 'SCPU.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 956.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 956.555 ; gain = 557.977
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 987.492 ; gain = 30.938
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 152efbf6c
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.949 ; gain = 572.457
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_10
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_11
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_12
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_13
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_10
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_11
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_12
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_13
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[3]_i_10
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[3]_i_11
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[3]_i_12
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[3]_i_13
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[7]_i_10
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[0]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[10]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[11]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[12]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[13]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[14]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[15]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[16]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[17]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[18]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[19]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[1]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[20]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[21]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[22]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[23]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[24]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[25]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[26]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[27]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[28]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[29]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[2]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[30]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[31]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[3]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[4]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[5]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[6]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[7]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[8]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/ALU_out[9]_INST_0_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[11]_i_10
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[15]_i_5
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[19]_i_5
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/ALU_Control[2] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/Q[31]_i_15
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[3]_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[3]_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[3]_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[3]_i_5
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/Q[7]_i_5
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__0_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__2_i_1
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__2_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__2_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__2_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__3_i_1
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__3_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__3_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry__3_i_4
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry_i_1__0
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry_i_2
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry_i_3
+WARNING: [Opt 31-155] Driverless net U2/PC/ImmSel[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/PC/c_carry_i_4
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][0]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][10]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][11]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][12]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][13]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][14]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][15]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][16]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][17]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][18]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][19]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][1]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][20]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][21]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][22]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][23]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][24]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][25]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][26]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][27]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][28]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][29]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][2]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][30]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][31]_i_2
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][3]_i_1
+WARNING: [Opt 31-155] Driverless net U2/Regs_U/MemtoReg[1] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: U2/Regs_U/register[1][4]_i_1
+INFO: [Common 17-14] Message 'Opt 31-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 152efbf6c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: eaf37370
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: df94be2f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 7 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clk_IBUF_BUFG_inst to drive 1024 load(s) on clock net clk_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 16820427e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.192 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 16820427e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: a464a674
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               7  |                                              0  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+ERROR: [Opt 31-67] Problem: A LUT4 cell in the design is missing a connection on input pin I2, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: U2/PC/Q[15]_i_10.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1895.188 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 101 Warnings, 0 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Opt 31-67] Problem: A LUT4 cell in the design is missing a connection on input pin I2, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: U2/PC/Q[15]_i_10.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 20:37:41 2023...

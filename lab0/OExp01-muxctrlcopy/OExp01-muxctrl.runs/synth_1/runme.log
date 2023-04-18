@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log OExp01_muxctrl_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OExp01_muxctrl_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source OExp01_muxctrl_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Vivado/lab0/OExo01-Element/IP/MUX'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top OExp01_muxctrl_wrapper -part xc7k160tfbg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18744
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'MUX2T1_5' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:65]
+INFO: [Synth 8-9937] previous definition of design element 'MUX2T1_5' is here [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/synth/OExp01_muxctrl_MUX2T1_5_0_0.v:65]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1242.316 ; gain = 408.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_wrapper' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/hdl/OExp01_muxctrl_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/synth/OExp01_muxctrl.v:12]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX2T1_5_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/synth/OExp01_muxctrl_MUX2T1_5_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_5' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX2T1_5_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/synth/OExp01_muxctrl_MUX2T1_5_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX2T1_5_1_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX2T1_5_1_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX4T1_5_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_0_0/synth/OExp01_muxctrl_MUX4T1_5_0_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_5' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_0_0/synth/OExp01_muxctrl_MUX4T1_5_0_0.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX4T1_5_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_0_0/synth/OExp01_muxctrl_MUX4T1_5_0_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX8T1_8_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_0/synth/OExp01_muxctrl_MUX8T1_8_0_0.v:80]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_8' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_0/synth/OExp01_muxctrl_MUX8T1_8_0_0.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX8T1_8_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_0/synth/OExp01_muxctrl_MUX8T1_8_0_0.v:80]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconcat_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_0/synth/OExp01_muxctrl_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconcat_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_0/synth/OExp01_muxctrl_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconcat_0_1' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_1/synth/OExp01_muxctrl_xlconcat_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconcat_0_1' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_1/synth/OExp01_muxctrl_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_0/synth/OExp01_muxctrl_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_0/synth/OExp01_muxctrl_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_1' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_1/synth/OExp01_muxctrl_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_1' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_1/synth/OExp01_muxctrl_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_2' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_2/synth/OExp01_muxctrl_xlconstant_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_2' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_2/synth/OExp01_muxctrl_xlconstant_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_3' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_3/synth/OExp01_muxctrl_xlconstant_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_3' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_3/synth/OExp01_muxctrl_xlconstant_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_0_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_0/synth/OExp01_muxctrl_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_0_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_0/synth/OExp01_muxctrl_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_0_2' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_2/synth/OExp01_muxctrl_xlslice_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_0_2' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_2/synth/OExp01_muxctrl_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_1_0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_0/synth/OExp01_muxctrl_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_1_0' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_0/synth/OExp01_muxctrl_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_1_1' [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_1/synth/OExp01_muxctrl_xlslice_1_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_1_1' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_1/synth/OExp01_muxctrl_xlslice_1_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/synth/OExp01_muxctrl.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_wrapper' (0#1) [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/hdl/OExp01_muxctrl_wrapper.v:12]
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1333.492 ; gain = 499.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1333.492 ; gain = 499.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1333.492 ; gain = 499.477
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1333.492 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.srcs/constrs_1/new/muxctrl.xdc]
+Finished Parsing XDC File [D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.srcs/constrs_1/new/muxctrl.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.srcs/constrs_1/new/muxctrl.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OExp01_muxctrl_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OExp01_muxctrl_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1340.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1340.559 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX2T1_5_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX2T1_5_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX4T1_5_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconcat_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX8T1_8_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |MUX2T1_5      |         2|
+|2     |MUX4T1_5      |         1|
+|3     |MUX8T1_8      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |MUX2T1_5_bbox |     2|
+|3     |MUX4T1_5_bbox |     1|
+|4     |MUX8T1_8_bbox |     1|
+|5     |IBUF          |    16|
+|6     |OBUF          |     5|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1340.559 ; gain = 499.477
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1340.559 ; gain = 506.543
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/MUX2T1_5.edf]
+Finished Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/MUX2T1_5.edf]
+Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_0_0/MUX4T1_5.edf]
+Finished Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_0_0/MUX4T1_5.edf]
+Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_0/MUX8T1_8.edf]
+Finished Parsing EDIF File [d:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_0/MUX8T1_8.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.539 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1367.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: bbf9c7f6
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 101 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1367.266 ; gain = 944.109
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Project/Vivado/lab0/OExp01-muxctrl/OExp01-muxctrl.runs/synth_1/OExp01_muxctrl_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OExp01_muxctrl_wrapper_utilization_synth.rpt -pb OExp01_muxctrl_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  1 21:59:01 2023...

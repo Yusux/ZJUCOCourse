@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.gen/sources_1/ip/MUX2T1_8_0/MUX2T1_8_0_sim_netlist.v,1677673323,verilog,,D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.srcs/sources_1/new/MUX2T1_8_tb.v,,MUX2T1_8_0;MUX2T1_8_0_MUX2T1_8,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.gen/sources_1/ip/and32_0_2/and_32.v,1677672100,verilog,,D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.gen/sources_1/ip/and32_0_2/sim/and32_0.v,,and32,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.gen/sources_1/ip/and32_0_2/sim/and32_0.v,1677672100,verilog,,D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.srcs/sources_1/new/and32_tb.v,,and32_0,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.srcs/sources_1/new/MUX2T1_8_tb.v,1677673609,verilog,,,,MUX2T1_8_tb,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.srcs/sources_1/new/add32_tb.v,1677672938,verilog,,,,add32_tb,,,,,,,,
+D:/Project/Vivado/lab0/OExo01-Element/OExo01-Element.srcs/sources_1/new/and32_tb.v,1677672253,verilog,,,,and32_tb,,,,,,,,

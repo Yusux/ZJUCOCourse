@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../OExo01-Element.gen/sources_1/ip/ROM_D_1/sim/ROM_D.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

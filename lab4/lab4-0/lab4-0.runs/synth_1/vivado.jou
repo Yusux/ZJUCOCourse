@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr 18 20:36:43 2023
+# Process ID: 15868
+# Current directory: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/synth_1
+# Command line: vivado.exe -log SCPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCPU.tcl
+# Log file: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/synth_1/SCPU.vds
+# Journal file: D:/Project/Vivado/lab4/lab4-0/lab4-0.runs/synth_1\vivado.jou
+# Running On: yusux, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 33719 MB
+#-----------------------------------------------------------
+source SCPU.tcl -notrace

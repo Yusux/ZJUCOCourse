@@ -1,0 +1,3 @@
+and_32.v,verilog,xil_defaultlib,../../../../OExo01-Element.gen/sources_1/ip/and32_0_2/and_32.v,
+and32_0.v,verilog,xil_defaultlib,../../../../OExo01-Element.gen/sources_1/ip/and32_0_2/sim/and32_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
