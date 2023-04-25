@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../platform.srcs/sources_1/imports/lab4" \
+"../../../../platform.gen/sources_1/ip/dist_mem_gen/sim/dist_mem_gen.v" \
+"../../../../platform.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../platform.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0_sim_netlist.v" \
+"../../../../platform.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0_sim_netlist.v" \
+"../../../../platform.srcs/sources_1/imports/new/ALU.v" \
+"../../../../platform.srcs/sources_1/imports/new/DataPath.v" \
+"../../../../platform.srcs/sources_1/imports/new/ImmGen.v" \
+"../../../../platform.srcs/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v" \
+"../../../../platform.srcs/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v" \
+"../../../../platform.srcs/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v" \
+"../../../../platform.srcs/sources_1/imports/new/SCPU_ctrl.v" \
+"../../../../platform.srcs/sources_1/new/testbench.v" \
+"../../../../platform.srcs/sim_1/new/testbench_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

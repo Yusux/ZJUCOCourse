@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Apr 19 14:02:12 2023
+| Host         : yusux running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file platform_bus_skew_routed.rpt -pb platform_bus_skew_routed.pb -rpx platform_bus_skew_routed.rpx
+| Design       : platform
+| Device       : 7k160t-fbg676
+| Speed File   : -2L  PRODUCTION 1.12 2017-02-17
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

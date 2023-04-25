@@ -33,6 +33,14 @@ module SCPU(
       output wire[31:0] Addr_out
    );
 
+  wire [1:0] ImmSel;
+  wire [1:0] MemtoReg;
+  wire [2:0] ALU_Control;
+  wire ALUSrc_B;
+  wire Jump;
+  wire Branch;
+  wire RegWrite;
+
    SCPU_ctrl U1(
       .OPcode(inst_in[6:2]),
       .Fun3(inst_in[14:12]),

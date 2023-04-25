@@ -1,0 +1,146 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Apr  6 14:41:00 2023
+| Host         : yusux running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_control_sets_placed.rpt
+| Design       : VGA
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    68 |
+|    Minimum number of control sets                        |    68 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    68 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |    64 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------+---------------------------------------+------------------+----------------+--------------+
+| Clock Signal |            Enable Signal            |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+-------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  clk_25m     |                                     |                                       |                2 |              2 |         1.00 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_9  |                                       |                2 |              8 |         4.00 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_12 |                                       |                2 |              8 |         4.00 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_28 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_29 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[8]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[8]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_26 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[6]_3  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[8]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[9]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_32 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_20 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_43 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_21 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_4  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_25 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[6]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[6]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_27 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_30 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_7  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_39 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_22 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_8  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_35 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_3  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_38 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_40 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_6  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_41 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_31 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_33 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_34 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[6]_4  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[6]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[9]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_37 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_42 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_3  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[7]_5  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_36 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_5  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_24 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_23 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[10]_1 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[11]_1 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_13 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_16 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_11 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_17 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[11]_0 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_15 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_18 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_19 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[10]_0 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_10 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_14 |                                       |                3 |             10 |         3.33 |
+|  clk_100m    | vga_debugger/display_addr_reg[3]_4  |                                       |                3 |             10 |         3.33 |
+|  clk_25m     |                                     | vga_controller/h_count[9]_i_1_n_0     |                4 |             10 |         2.50 |
+|  clk_25m     | vga_controller/v_count              | rst                                   |                4 |             10 |         2.50 |
+|  clk_100m    |                                     | vga_debugger/display_addr[11]_i_1_n_0 |                6 |             16 |         2.67 |
++--------------+-------------------------------------+---------------------------------------+------------------+----------------+--------------+
+
+

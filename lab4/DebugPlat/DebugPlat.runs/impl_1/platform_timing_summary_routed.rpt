@@ -1,0 +1,1188 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Apr 25 22:46:26 2023
+| Host         : yusux running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file platform_timing_summary_routed.rpt -pb platform_timing_summary_routed.pb -rpx platform_timing_summary_routed.rpx -warn_on_violation
+| Design       : platform
+| Device       : 7k160t-ffg676
+| Speed File   : -2L  PRODUCTION 1.12 2017-02-17
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     1000        
+TIMING-20  Warning           Non-clocked latch               12          
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (8436)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (9359)
+5. checking no_input_delay (21)
+6. checking no_output_delay (20)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (8436)
+---------------------------
+ There are 863 register/latch pins with no clock driven by root clock pin: clk_100mhz (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[10]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[11]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[2]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[3]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[4]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[5]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[6]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[7]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[8]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: U1/U2/PC_U/Q_reg[9]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[11]/Q (HIGH)
+
+ There are 22 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[1]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[24]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[2]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[6]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[9]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U9/BTN_OK_reg[0]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U9/SW_OK_reg[10]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U9/SW_OK_reg[2]/Q (HIGH)
+
+ There are 1221 register/latch pins with no clock driven by root clock pin: U9/SW_OK_reg[8]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (9359)
+---------------------------------------------------
+ There are 9359 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (21)
+-------------------------------
+ There are 21 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (20)
+--------------------------------
+ There are 20 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 9384          inf        0.000                      0                 9384           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          9384 Endpoints
+Min Delay          9384 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2624_2687_6_7/DP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.588ns  (logic 2.075ns (8.797%)  route 21.513ns (91.203%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.209    23.588    U11/vga_display/display_data_reg_2624_2687_6_7/D
+    SLICE_X78Y92         RAMD64E                                      r  U11/vga_display/display_data_reg_2624_2687_6_7/DP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2624_2687_6_7/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.588ns  (logic 2.075ns (8.797%)  route 21.513ns (91.203%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.209    23.588    U11/vga_display/display_data_reg_2624_2687_6_7/D
+    SLICE_X78Y92         RAMD64E                                      r  U11/vga_display/display_data_reg_2624_2687_6_7/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2752_2815_6_7/DP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.502ns  (logic 2.075ns (8.829%)  route 21.427ns (91.171%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.122    23.502    U11/vga_display/display_data_reg_2752_2815_6_7/D
+    SLICE_X78Y91         RAMD64E                                      r  U11/vga_display/display_data_reg_2752_2815_6_7/DP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2752_2815_6_7/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.502ns  (logic 2.075ns (8.829%)  route 21.427ns (91.171%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.122    23.502    U11/vga_display/display_data_reg_2752_2815_6_7/D
+    SLICE_X78Y91         RAMD64E                                      r  U11/vga_display/display_data_reg_2752_2815_6_7/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_3904_3967_0_2/RAMC/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.451ns  (logic 2.164ns (9.228%)  route 21.287ns (90.772%))
+  Logic Levels:           26  (CARRY4=7 FDCE=1 LUT2=1 LUT3=1 LUT4=1 LUT5=3 LUT6=10 MUXF7=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 r  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 r  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 r  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 r  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          1.529    14.912    U4/addr_bus[29]
+    SLICE_X93Y116        LUT6 (Prop_lut6_I2_O)        0.043    14.955 r  U4/Cpu_data4bus[31]_INST_0_i_3/O
+                         net (fo=32, routed)          1.569    16.523    U4/Cpu_data4bus[31]_INST_0_i_3_n_0
+    SLICE_X87Y117        LUT6 (Prop_lut6_I5_O)        0.043    16.566 r  U4/Cpu_data4bus[0]_INST_0/O
+                         net (fo=2, routed)           0.244    16.810    U1/U2/MUX4T1_32_0_U/inst/I1[0]
+    SLICE_X87Y117        LUT5 (Prop_lut5_I0_O)        0.043    16.853 r  U1/U2/MUX4T1_32_0_U/inst/o[0]_INST_0/O
+                         net (fo=32, routed)          0.988    17.840    U11/vga_debugger/reg_i_data[0]
+    SLICE_X87Y132        LUT6 (Prop_lut6_I5_O)        0.043    17.883 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_449/O
+                         net (fo=1, routed)           0.000    17.883    U11/vga_debugger/display_data_reg_0_63_0_2_i_449_n_0
+    SLICE_X87Y132        MUXF7 (Prop_muxf7_I0_O)      0.107    17.990 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_183/O
+                         net (fo=1, routed)           0.740    18.730    U11/vga_debugger/display_data_reg_0_63_0_2_i_183_n_0
+    SLICE_X85Y136        LUT5 (Prop_lut5_I0_O)        0.124    18.854 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_70/O
+                         net (fo=1, routed)           0.191    19.045    U11/vga_debugger/display_data_reg_0_63_0_2_i_70_n_0
+    SLICE_X85Y136        LUT6 (Prop_lut6_I0_O)        0.043    19.088 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_33/O
+                         net (fo=1, routed)           0.571    19.659    U11/vga_debugger/display_data_reg_0_63_0_2_i_33_n_0
+    SLICE_X86Y132        LUT6 (Prop_lut6_I3_O)        0.043    19.702 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_12/O
+                         net (fo=3, routed)           0.982    20.683    U11/vga_debugger/dynamic_hex[0]
+    SLICE_X89Y116        LUT4 (Prop_lut4_I0_O)        0.043    20.726 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_3/O
+                         net (fo=64, routed)          2.724    23.451    U11/vga_display/display_data_reg_3904_3967_0_2/DIC
+    SLICE_X94Y93         RAMD64E                                      r  U11/vga_display/display_data_reg_3904_3967_0_2/RAMC/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_3776_3839_0_2/RAMC/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.448ns  (logic 2.164ns (9.229%)  route 21.284ns (90.771%))
+  Logic Levels:           26  (CARRY4=7 FDCE=1 LUT2=1 LUT3=1 LUT4=1 LUT5=3 LUT6=10 MUXF7=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 r  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 r  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 r  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 r  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          1.529    14.912    U4/addr_bus[29]
+    SLICE_X93Y116        LUT6 (Prop_lut6_I2_O)        0.043    14.955 r  U4/Cpu_data4bus[31]_INST_0_i_3/O
+                         net (fo=32, routed)          1.569    16.523    U4/Cpu_data4bus[31]_INST_0_i_3_n_0
+    SLICE_X87Y117        LUT6 (Prop_lut6_I5_O)        0.043    16.566 r  U4/Cpu_data4bus[0]_INST_0/O
+                         net (fo=2, routed)           0.244    16.810    U1/U2/MUX4T1_32_0_U/inst/I1[0]
+    SLICE_X87Y117        LUT5 (Prop_lut5_I0_O)        0.043    16.853 r  U1/U2/MUX4T1_32_0_U/inst/o[0]_INST_0/O
+                         net (fo=32, routed)          0.988    17.840    U11/vga_debugger/reg_i_data[0]
+    SLICE_X87Y132        LUT6 (Prop_lut6_I5_O)        0.043    17.883 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_449/O
+                         net (fo=1, routed)           0.000    17.883    U11/vga_debugger/display_data_reg_0_63_0_2_i_449_n_0
+    SLICE_X87Y132        MUXF7 (Prop_muxf7_I0_O)      0.107    17.990 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_183/O
+                         net (fo=1, routed)           0.740    18.730    U11/vga_debugger/display_data_reg_0_63_0_2_i_183_n_0
+    SLICE_X85Y136        LUT5 (Prop_lut5_I0_O)        0.124    18.854 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_70/O
+                         net (fo=1, routed)           0.191    19.045    U11/vga_debugger/display_data_reg_0_63_0_2_i_70_n_0
+    SLICE_X85Y136        LUT6 (Prop_lut6_I0_O)        0.043    19.088 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_33/O
+                         net (fo=1, routed)           0.571    19.659    U11/vga_debugger/display_data_reg_0_63_0_2_i_33_n_0
+    SLICE_X86Y132        LUT6 (Prop_lut6_I3_O)        0.043    19.702 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_12/O
+                         net (fo=3, routed)           0.982    20.683    U11/vga_debugger/dynamic_hex[0]
+    SLICE_X89Y116        LUT4 (Prop_lut4_I0_O)        0.043    20.726 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_3/O
+                         net (fo=64, routed)          2.722    23.448    U11/vga_display/display_data_reg_3776_3839_0_2/DIC
+    SLICE_X92Y90         RAMD64E                                      r  U11/vga_display/display_data_reg_3776_3839_0_2/RAMC/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2944_3007_6_7/DP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.441ns  (logic 2.075ns (8.852%)  route 21.366ns (91.148%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.062    23.441    U11/vga_display/display_data_reg_2944_3007_6_7/D
+    SLICE_X76Y92         RAMD64E                                      r  U11/vga_display/display_data_reg_2944_3007_6_7/DP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2944_3007_6_7/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.441ns  (logic 2.075ns (8.852%)  route 21.366ns (91.148%))
+  Logic Levels:           25  (CARRY4=7 FDCE=1 LUT2=1 LUT3=3 LUT5=3 LUT6=9 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 f  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 f  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 f  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 f  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          2.206    15.588    U4/addr_bus[29]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I1_O)        0.043    15.631 r  U4/ram_data_in[9]_INST_0/O
+                         net (fo=2, routed)           0.361    15.992    U11/vga_debugger/ram_data_in[9]
+    SLICE_X83Y124        LUT5 (Prop_lut5_I0_O)        0.049    16.041 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_608/O
+                         net (fo=1, routed)           0.449    16.490    U11/vga_debugger/display_data_reg_0_63_0_2_i_608_n_0
+    SLICE_X80Y121        LUT6 (Prop_lut6_I3_O)        0.136    16.626 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_286/O
+                         net (fo=1, routed)           0.275    16.900    U11/vga_debugger/display_data_reg_0_63_0_2_i_286_n_0
+    SLICE_X78Y120        LUT6 (Prop_lut6_I2_O)        0.043    16.943 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_110/O
+                         net (fo=1, routed)           0.543    17.486    U11/vga_debugger/display_data_reg_0_63_0_2_i_110_n_0
+    SLICE_X80Y122        LUT6 (Prop_lut6_I3_O)        0.043    17.529 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_46/O
+                         net (fo=1, routed)           0.621    18.150    U11/vga_debugger/display_data_reg_0_63_0_2_i_46_n_0
+    SLICE_X80Y126        LUT3 (Prop_lut3_I1_O)        0.043    18.193 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_25/O
+                         net (fo=1, routed)           0.198    18.391    U11/vga_debugger/display_data_reg_0_63_0_2_i_25_n_0
+    SLICE_X80Y126        LUT6 (Prop_lut6_I0_O)        0.043    18.434 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_10/O
+                         net (fo=6, routed)           0.902    19.336    U11/vga_debugger/dynamic_hex[1]
+    SLICE_X88Y115        LUT3 (Prop_lut3_I1_O)        0.043    19.379 r  U11/vga_debugger/display_data_reg_320_383_6_7_i_1/O
+                         net (fo=126, routed)         4.062    23.441    U11/vga_display/display_data_reg_2944_3007_6_7/D
+    SLICE_X76Y92         RAMD64E                                      r  U11/vga_display/display_data_reg_2944_3007_6_7/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_2432_2495_0_2/RAMB/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.391ns  (logic 2.164ns (9.251%)  route 21.227ns (90.749%))
+  Logic Levels:           26  (CARRY4=7 FDCE=1 LUT2=1 LUT3=1 LUT4=1 LUT5=3 LUT6=10 MUXF7=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 r  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 r  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 r  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 r  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          1.529    14.912    U4/addr_bus[29]
+    SLICE_X93Y116        LUT6 (Prop_lut6_I2_O)        0.043    14.955 r  U4/Cpu_data4bus[31]_INST_0_i_3/O
+                         net (fo=32, routed)          1.569    16.523    U4/Cpu_data4bus[31]_INST_0_i_3_n_0
+    SLICE_X87Y117        LUT6 (Prop_lut6_I5_O)        0.043    16.566 r  U4/Cpu_data4bus[0]_INST_0/O
+                         net (fo=2, routed)           0.244    16.810    U1/U2/MUX4T1_32_0_U/inst/I1[0]
+    SLICE_X87Y117        LUT5 (Prop_lut5_I0_O)        0.043    16.853 r  U1/U2/MUX4T1_32_0_U/inst/o[0]_INST_0/O
+                         net (fo=32, routed)          0.988    17.840    U11/vga_debugger/reg_i_data[0]
+    SLICE_X87Y132        LUT6 (Prop_lut6_I5_O)        0.043    17.883 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_449/O
+                         net (fo=1, routed)           0.000    17.883    U11/vga_debugger/display_data_reg_0_63_0_2_i_449_n_0
+    SLICE_X87Y132        MUXF7 (Prop_muxf7_I0_O)      0.107    17.990 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_183/O
+                         net (fo=1, routed)           0.740    18.730    U11/vga_debugger/display_data_reg_0_63_0_2_i_183_n_0
+    SLICE_X85Y136        LUT5 (Prop_lut5_I0_O)        0.124    18.854 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_70/O
+                         net (fo=1, routed)           0.191    19.045    U11/vga_debugger/display_data_reg_0_63_0_2_i_70_n_0
+    SLICE_X85Y136        LUT6 (Prop_lut6_I0_O)        0.043    19.088 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_33/O
+                         net (fo=1, routed)           0.571    19.659    U11/vga_debugger/display_data_reg_0_63_0_2_i_33_n_0
+    SLICE_X86Y132        LUT6 (Prop_lut6_I3_O)        0.043    19.702 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_12/O
+                         net (fo=3, routed)           0.893    20.594    U11/vga_debugger/dynamic_hex[0]
+    SLICE_X89Y116        LUT4 (Prop_lut4_I1_O)        0.043    20.637 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_2/O
+                         net (fo=64, routed)          2.754    23.391    U11/vga_display/display_data_reg_2432_2495_0_2/DIB
+    SLICE_X86Y91         RAMD64E                                      r  U11/vga_display/display_data_reg_2432_2495_0_2/RAMB/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U1/U2/PC_U/Q_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U11/vga_display/display_data_reg_3520_3583_0_2/RAMB/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.389ns  (logic 2.164ns (9.252%)  route 21.225ns (90.748%))
+  Logic Levels:           26  (CARRY4=7 FDCE=1 LUT2=1 LUT3=1 LUT4=1 LUT5=3 LUT6=10 MUXF7=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y120        FDCE                         0.000     0.000 r  U1/U2/PC_U/Q_reg[6]/C
+    SLICE_X89Y120        FDCE (Prop_fdce_C_Q)         0.223     0.223 r  U1/U2/PC_U/Q_reg[6]/Q
+                         net (fo=57, routed)          2.302     2.525    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/a[4]
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.568 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1/O
+                         net (fo=1, routed)           0.239     2.807    U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0_i_1_n_0
+    SLICE_X106Y116       LUT6 (Prop_lut6_I1_O)        0.043     2.850 r  U2/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[18]_INST_0/O
+                         net (fo=260, routed)         5.639     8.489    U1/U2/Regs_U/spo[3]
+    SLICE_X79Y122        LUT6 (Prop_lut6_I2_O)        0.043     8.532 r  U1/U2/Regs_U/sub_res_carry__0_i_49/O
+                         net (fo=1, routed)           0.000     8.532    U1/U2/Regs_U/sub_res_carry__0_i_49_n_0
+    SLICE_X79Y122        MUXF7 (Prop_muxf7_I0_O)      0.107     8.639 r  U1/U2/Regs_U/sub_res_carry__0_i_19/O
+                         net (fo=1, routed)           0.687     9.326    U1/U2/Regs_U/sub_res_carry__0_i_19_n_0
+    SLICE_X77Y126        LUT6 (Prop_lut6_I3_O)        0.124     9.450 r  U1/U2/Regs_U/sub_res_carry__0_i_3/O
+                         net (fo=12, routed)          1.640    11.090    U1/U2/Regs_U/sub_res_carry__0_i_12_0[1]
+    SLICE_X101Y122       LUT2 (Prop_lut2_I1_O)        0.043    11.133 r  U1/U2/Regs_U/sub_res_carry__0_i_27/O
+                         net (fo=2, routed)           0.000    11.133    U1/U2/ALU_U/MUX4T1_32_0_U_i_348_2[1]
+    SLICE_X101Y122       CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.400 r  U1/U2/ALU_U/sub_res_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    11.400    U1/U2/ALU_U/sub_res_carry__0_n_0
+    SLICE_X101Y123       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.453 r  U1/U2/ALU_U/sub_res_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    11.453    U1/U2/ALU_U/sub_res_carry__1_n_0
+    SLICE_X101Y124       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.506 r  U1/U2/ALU_U/sub_res_carry__2/CO[3]
+                         net (fo=1, routed)           0.007    11.513    U1/U2/ALU_U/sub_res_carry__2_n_0
+    SLICE_X101Y125       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.566 r  U1/U2/ALU_U/sub_res_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    11.566    U1/U2/ALU_U/sub_res_carry__3_n_0
+    SLICE_X101Y126       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.619 r  U1/U2/ALU_U/sub_res_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    11.619    U1/U2/ALU_U/sub_res_carry__4_n_0
+    SLICE_X101Y127       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.672 r  U1/U2/ALU_U/sub_res_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    11.672    U1/U2/ALU_U/sub_res_carry__5_n_0
+    SLICE_X101Y128       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.838 r  U1/U2/ALU_U/sub_res_carry__6/O[1]
+                         net (fo=1, routed)           0.440    12.278    U1/U2/ALU_U/data1[29]
+    SLICE_X101Y129       LUT3 (Prop_lut3_I0_O)        0.129    12.407 r  U1/U2/ALU_U/MUX4T1_32_0_U_i_126/O
+                         net (fo=1, routed)           0.453    12.860    U1/U2/Regs_U/MUX4T1_32_0_U_i_3
+    SLICE_X99Y128        LUT6 (Prop_lut6_I5_O)        0.136    12.996 r  U1/U2/Regs_U/MUX4T1_32_0_U_i_41/O
+                         net (fo=1, routed)           0.343    13.339    U1/U1/registers_reg[31][31]_43
+    SLICE_X96Y128        LUT5 (Prop_lut5_I4_O)        0.043    13.382 r  U1/U1/MUX4T1_32_0_U_i_3/O
+                         net (fo=86, routed)          1.529    14.912    U4/addr_bus[29]
+    SLICE_X93Y116        LUT6 (Prop_lut6_I2_O)        0.043    14.955 r  U4/Cpu_data4bus[31]_INST_0_i_3/O
+                         net (fo=32, routed)          1.569    16.523    U4/Cpu_data4bus[31]_INST_0_i_3_n_0
+    SLICE_X87Y117        LUT6 (Prop_lut6_I5_O)        0.043    16.566 r  U4/Cpu_data4bus[0]_INST_0/O
+                         net (fo=2, routed)           0.244    16.810    U1/U2/MUX4T1_32_0_U/inst/I1[0]
+    SLICE_X87Y117        LUT5 (Prop_lut5_I0_O)        0.043    16.853 r  U1/U2/MUX4T1_32_0_U/inst/o[0]_INST_0/O
+                         net (fo=32, routed)          0.988    17.840    U11/vga_debugger/reg_i_data[0]
+    SLICE_X87Y132        LUT6 (Prop_lut6_I5_O)        0.043    17.883 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_449/O
+                         net (fo=1, routed)           0.000    17.883    U11/vga_debugger/display_data_reg_0_63_0_2_i_449_n_0
+    SLICE_X87Y132        MUXF7 (Prop_muxf7_I0_O)      0.107    17.990 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_183/O
+                         net (fo=1, routed)           0.740    18.730    U11/vga_debugger/display_data_reg_0_63_0_2_i_183_n_0
+    SLICE_X85Y136        LUT5 (Prop_lut5_I0_O)        0.124    18.854 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_70/O
+                         net (fo=1, routed)           0.191    19.045    U11/vga_debugger/display_data_reg_0_63_0_2_i_70_n_0
+    SLICE_X85Y136        LUT6 (Prop_lut6_I0_O)        0.043    19.088 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_33/O
+                         net (fo=1, routed)           0.571    19.659    U11/vga_debugger/display_data_reg_0_63_0_2_i_33_n_0
+    SLICE_X86Y132        LUT6 (Prop_lut6_I3_O)        0.043    19.702 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_12/O
+                         net (fo=3, routed)           0.893    20.594    U11/vga_debugger/dynamic_hex[0]
+    SLICE_X89Y116        LUT4 (Prop_lut4_I1_O)        0.043    20.637 r  U11/vga_debugger/display_data_reg_0_63_0_2_i_2/O
+                         net (fo=64, routed)          2.751    23.389    U11/vga_display/display_data_reg_3520_3583_0_2/DIB
+    SLICE_X94Y94         RAMD64E                                      r  U11/vga_display/display_data_reg_3520_3583_0_2/RAMB/I
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 U6/M2/buffer_reg[55]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            U6/M2/buffer_reg[54]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.182ns  (logic 0.128ns (70.512%)  route 0.054ns (29.488%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y109        FDRE                         0.000     0.000 r  U6/M2/buffer_reg[55]/C
+    SLICE_X75Y109        FDRE (Prop_fdre_C_Q)         0.100     0.100 r  U6/M2/buffer_reg[55]/Q
+                         net (fo=1, routed)           0.054     0.154    U6/M2/in10[54]
+    SLICE_X74Y109        LUT6 (Prop_lut6_I1_O)        0.028     0.182 r  U6/M2/buffer[54]_i_1/O
+                         net (fo=1, routed)           0.000     0.182    U6/M2/buffer[54]
+    SLICE_X74Y109        FDRE                                         r  U6/M2/buffer_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter1_Lock_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.194ns  (logic 0.135ns (69.452%)  route 0.059ns (30.547%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X96Y114        FDCE                         0.000     0.000 r  U10/counter1_Lock_reg[1]/C
+    SLICE_X96Y114        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter1_Lock_reg[1]/Q
+                         net (fo=2, routed)           0.059     0.166    U10/counter1_Lock_reg_n_0_[1]
+    SLICE_X97Y114        LUT6 (Prop_lut6_I4_O)        0.028     0.194 r  U10/counter1[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.194    U10/p_1_in[0]
+    SLICE_X97Y114        FDCE                                         r  U10/counter1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter2_Lock_reg[21]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter2_reg[20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.197ns  (logic 0.135ns (68.482%)  route 0.062ns (31.518%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y117        FDCE                         0.000     0.000 r  U10/counter2_Lock_reg[21]/C
+    SLICE_X95Y117        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter2_Lock_reg[21]/Q
+                         net (fo=2, routed)           0.062     0.169    U10/counter2_Lock_reg_n_0_[21]
+    SLICE_X94Y117        LUT6 (Prop_lut6_I4_O)        0.028     0.197 r  U10/counter2[20]_i_1/O
+                         net (fo=1, routed)           0.000     0.197    U10/counter2[20]_i_1_n_0
+    SLICE_X94Y117        FDCE                                         r  U10/counter2_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter2_Lock_reg[25]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter2_reg[25]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.197ns  (logic 0.135ns (68.482%)  route 0.062ns (31.518%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y119        FDCE                         0.000     0.000 r  U10/counter2_Lock_reg[25]/C
+    SLICE_X95Y119        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter2_Lock_reg[25]/Q
+                         net (fo=2, routed)           0.062     0.169    U10/counter2_Lock_reg_n_0_[25]
+    SLICE_X94Y119        LUT6 (Prop_lut6_I3_O)        0.028     0.197 r  U10/counter2[25]_i_1/O
+                         net (fo=1, routed)           0.000     0.197    U10/counter2[25]_i_1_n_0
+    SLICE_X94Y119        FDCE                                         r  U10/counter2_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter0_Lock_reg[21]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter0_reg[21]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.198ns  (logic 0.135ns (68.161%)  route 0.063ns (31.839%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y120        FDCE                         0.000     0.000 r  U10/counter0_Lock_reg[21]/C
+    SLICE_X93Y120        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter0_Lock_reg[21]/Q
+                         net (fo=2, routed)           0.063     0.170    U10/counter0_Lock_reg_n_0_[21]
+    SLICE_X92Y120        LUT6 (Prop_lut6_I0_O)        0.028     0.198 r  U10/counter0[21]_i_1/O
+                         net (fo=1, routed)           0.000     0.198    U10/counter0[21]_i_1_n_0
+    SLICE_X92Y120        FDCE                                         r  U10/counter0_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter0_Lock_reg[12]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter0_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.199ns  (logic 0.135ns (67.819%)  route 0.064ns (32.181%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y118        FDCE                         0.000     0.000 r  U10/counter0_Lock_reg[12]/C
+    SLICE_X91Y118        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter0_Lock_reg[12]/Q
+                         net (fo=2, routed)           0.064     0.171    U10/counter0_Lock_reg_n_0_[12]
+    SLICE_X90Y118        LUT6 (Prop_lut6_I3_O)        0.028     0.199 r  U10/counter0[11]_i_1/O
+                         net (fo=1, routed)           0.000     0.199    U10/counter0[11]_i_1_n_0
+    SLICE_X90Y118        FDCE                                         r  U10/counter0_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter0_Lock_reg[21]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter0_reg[20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.199ns  (logic 0.135ns (67.819%)  route 0.064ns (32.181%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y120        FDCE                         0.000     0.000 r  U10/counter0_Lock_reg[21]/C
+    SLICE_X93Y120        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter0_Lock_reg[21]/Q
+                         net (fo=2, routed)           0.064     0.171    U10/counter0_Lock_reg_n_0_[21]
+    SLICE_X92Y120        LUT6 (Prop_lut6_I3_O)        0.028     0.199 r  U10/counter0[20]_i_1/O
+                         net (fo=1, routed)           0.000     0.199    U10/counter0[20]_i_1_n_0
+    SLICE_X92Y120        FDCE                                         r  U10/counter0_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter0_Lock_reg[28]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter0_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.199ns  (logic 0.135ns (67.819%)  route 0.064ns (32.181%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y122        FDCE                         0.000     0.000 r  U10/counter0_Lock_reg[28]/C
+    SLICE_X91Y122        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter0_Lock_reg[28]/Q
+                         net (fo=2, routed)           0.064     0.171    U10/counter0_Lock_reg_n_0_[28]
+    SLICE_X90Y122        LUT6 (Prop_lut6_I0_O)        0.028     0.199 r  U10/counter0[28]_i_1/O
+                         net (fo=1, routed)           0.000     0.199    U10/counter0[28]_i_1_n_0
+    SLICE_X90Y122        FDCE                                         r  U10/counter0_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter2_Lock_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter2_reg[14]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.199ns  (logic 0.135ns (67.819%)  route 0.064ns (32.181%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y116        FDCE                         0.000     0.000 r  U10/counter2_Lock_reg[15]/C
+    SLICE_X95Y116        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter2_Lock_reg[15]/Q
+                         net (fo=2, routed)           0.064     0.171    U10/counter2_Lock_reg_n_0_[15]
+    SLICE_X94Y116        LUT6 (Prop_lut6_I4_O)        0.028     0.199 r  U10/counter2[14]_i_1/O
+                         net (fo=1, routed)           0.000     0.199    U10/counter2[14]_i_1_n_0
+    SLICE_X94Y116        FDCE                                         r  U10/counter2_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 U10/counter2_Lock_reg[23]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            U10/counter2_reg[22]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.199ns  (logic 0.135ns (67.819%)  route 0.064ns (32.181%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y118        FDCE                         0.000     0.000 r  U10/counter2_Lock_reg[23]/C
+    SLICE_X95Y118        FDCE (Prop_fdce_C_Q)         0.107     0.107 r  U10/counter2_Lock_reg[23]/Q
+                         net (fo=2, routed)           0.064     0.171    U10/counter2_Lock_reg_n_0_[23]
+    SLICE_X94Y118        LUT6 (Prop_lut6_I4_O)        0.028     0.199 r  U10/counter2[22]_i_1/O
+                         net (fo=1, routed)           0.000     0.199    U10/counter2[22]_i_1_n_0
+    SLICE_X94Y118        FDCE                                         r  U10/counter2_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
