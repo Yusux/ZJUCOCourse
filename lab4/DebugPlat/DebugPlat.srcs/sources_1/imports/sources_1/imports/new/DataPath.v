@@ -21,17 +21,22 @@
 
 
 module DataPath(
-      input wire        clk,
-      input wire        rst,
-      input wire [31:0] inst_field,
-      input wire [31:0] Data_in,
-      input wire [3:0]  ALU_Control,
-      input wire [1:0]  ImmSel,
-      input wire [1:0]  MemtoReg,
-      input wire        ALUSrc_B,
-      input wire        Jump,
-      input wire        Branch,
-      input wire        RegWrite,
+      input wire         clk,
+      input wire         rst,
+      input wire [31:0]  inst_field,
+      input wire [31:0]  Data_in,
+      input wire [3:0]   ALU_Control,
+      input wire [2:0]   ImmSel,
+      input wire [1:0]   MemtoReg,
+      input wire         ALUSrc_B,
+      input wire         Jump,
+      input wire         Jalr,
+      input wire         Branch,
+      input wire         RegWrite,
+      input wire [2:0]   Mem_Type,
+      input wire [2:0]   Store_Type,
+      input wire [2:0]   Branch_Type,
+      input wire         LuiAuipc,
       output wire [31:0] PC_out,
       output wire [31:0] Data_out,
       output wire [31:0] ALU_out,
@@ -84,7 +89,9 @@ module DataPath(
    wire [31:0] rs2_data;
    wire [31:0] ALU_B;
    wire [31:0] Regs_Wt_data;
+   wire [31:0] Mod_Data_in;
    wire ALU_zero;
+   wire Branch_Check;
 
    assign rs1 = inst_field[19:15];
    assign rs2 = inst_field[24:20];
@@ -93,8 +100,13 @@ module DataPath(
    assign reg_wen = RegWrite;
    assign PC_addr_4 = PC_out + 4;
    assign PC_addr_imm = PC_out + Imm_out;
-   assign Branch_Zero = Branch & ALU_zero;
-   assign Data_out = rs2_data;
+
+   Branch_Checker Branch_Checker_U(
+      .Branch(Branch),
+      .ALU_zero(ALU_zero),
+      .Branch_Type(Branch_Type),
+      .Branch_Check(Branch_Check)
+   );
 
    ImmGen ImmGen_U(
       .ImmSel(ImmSel),
@@ -102,20 +114,21 @@ module DataPath(
       .Imm_out(Imm_out)
    );
 
-
+   wire Jump_Contorl;
+   assign Jump_Contorl = Jump | Branch_Check;
 
    MUX2T1_32_0 MUX2T1_32_0_U0(
       .I0(PC_addr_4),
       .I1(PC_addr_imm),
-      .s(Branch_Zero),
+      .s(Jump_Contorl),
       .o(PC_MUX2T1_32_0_U0_o)
    );
 
 
    MUX2T1_32_0 MUX2T1_32_0_U1(
       .I0(PC_MUX2T1_32_0_U0_o),
-      .I1(PC_addr_imm),
-      .s(Jump),
+      .I1(ALU_out),
+      .s(Jalr),
       .o(PC_addr_next)
    );
 
@@ -143,11 +156,26 @@ module DataPath(
    .zero(ALU_zero)
    );
 
+   MemDataModer MemDataModer_U0(
+      .Mem_Data_in(Data_in),
+      .Mem_Type(Mem_Type),
+      .Mem_Data_out(Mod_Data_in)
+   );
+
+   wire [31:0] LuiAuipc_out;
+
+   MUX2T1_32_0 MUX2T1_32_0_U3(
+      .I0(Imm_out),
+      .I1(PC_addr_imm),
+      .s(LuiAuipc),
+      .o(LuiAuipc_out)
+   );
+
    MUX4T1_32_0 MUX4T1_32_0_U(
       .I0(ALU_out),
-      .I1(Data_in),
+      .I1(Mod_Data_in),
       .I2(PC_addr_4),
-      .I3(PC_addr_4),
+      .I3(LuiAuipc_out),
       .s(MemtoReg),
       .o(Regs_Wt_data)
    );
@@ -196,4 +224,9 @@ module DataPath(
       .Reg31(Reg31)
    );
 
+   MemDataModer MemDataModer_U1(
+      .Mem_Data_in(rs2_data),
+      .Mem_Type(Store_Type),
+      .Mem_Data_out(Data_out)
+   );
 endmodule

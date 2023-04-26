@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Tue Apr 25 22:46:25 2023
+| Date             : Wed Apr 26 16:47:18 2023
 | Host             : yusux running 64-bit major release  (build 9200)
 | Command          : report_power -file platform_power_routed.rpt -pb platform_power_summary_routed.pb -rpx platform_power_routed.rpx
 | Design           : platform
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 43.976 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 59.822 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 42.664                           |
-| Device Static (W)        | 1.312                            |
+| Dynamic (W)              | 57.760                           |
+| Device Static (W)        | 2.062                            |
 | Effective TJA (C/W)      | 1.9                              |
-| Max Ambient (C)          | 15.4                             |
-| Junction Temperature (C) | 109.6                            |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |    11.195 |     7132 |       --- |             --- |
-|   LUT as Logic           |    10.423 |     3777 |    101400 |            3.72 |
-|   CARRY4                 |     0.328 |      101 |     25350 |            0.40 |
-|   F7/F8 Muxes            |     0.185 |      823 |    101400 |            0.81 |
-|   LUT as Distributed RAM |     0.121 |      636 |     35000 |            1.82 |
-|   Register               |     0.104 |     1586 |    202800 |            0.78 |
-|   BUFG                   |     0.035 |        5 |        32 |           15.63 |
+| Slice Logic              |    17.046 |     7442 |       --- |             --- |
+|   LUT as Logic           |    15.901 |     3985 |    101400 |            3.93 |
+|   CARRY4                 |     0.400 |      101 |     25350 |            0.40 |
+|   F7/F8 Muxes            |     0.341 |      857 |    101400 |            0.85 |
+|   LUT as Distributed RAM |     0.250 |      636 |     35000 |            1.82 |
+|   Register               |     0.123 |     1602 |    202800 |            0.79 |
+|   BUFG                   |     0.030 |        5 |        32 |           15.63 |
 |   Others                 |     0.000 |       29 |       --- |             --- |
-| Signals                  |    19.747 |     5089 |       --- |             --- |
+| Signals                  |    25.879 |     5311 |       --- |             --- |
 | Block RAM                |     0.129 |        1 |       325 |            0.31 |
-| I/O                      |    11.594 |       49 |       400 |           12.25 |
-| Static Power             |     1.312 |          |           |                 |
-| Total                    |    43.976 |          |           |                 |
+| I/O                      |    14.707 |       49 |       400 |           12.25 |
+| Static Power             |     2.062 |          |           |                 |
+| Total                    |    59.822 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +74,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    32.250 |      31.149 |      1.101 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.547 |       0.474 |      0.073 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.908 |       2.907 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    44.894 |      43.131 |      1.763 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.696 |       0.588 |      0.108 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.790 |       3.789 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.573 |       0.572 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.020 |       0.019 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.047 |       0.010 |      0.037 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.072 |       0.010 |      0.062 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,115 +142,174 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| platform                             |    42.664 |
-|   U1                                 |     9.069 |
-|     U1                               |     0.922 |
-|     U2                               |     8.147 |
-|       ALU_U                          |     0.409 |
-|       MUX2T1_32_0_U0                 |     0.141 |
-|       MUX2T1_32_0_U1                 |     0.130 |
-|       MUX2T1_32_0_U2                 |     0.292 |
-|       MUX4T1_32_0_U                  |     2.351 |
-|       PC_U                           |     0.857 |
-|       Regs_U                         |     3.623 |
-|   U10                                |     1.491 |
-|   U11                                |    14.458 |
-|     vga_controller                   |     2.316 |
-|     vga_debugger                     |    11.084 |
-|     vga_display                      |     1.058 |
-|       display_data_reg_0_63_0_2      |     0.002 |
-|       display_data_reg_1024_1087_0_2 |     0.002 |
-|       display_data_reg_1088_1151_0_2 |     0.002 |
-|       display_data_reg_1152_1215_0_2 |     0.002 |
-|       display_data_reg_1216_1279_0_2 |     0.002 |
-|       display_data_reg_1280_1343_0_2 |     0.002 |
+| platform                             |    57.760 |
+|   U1                                 |    17.790 |
+|     U1                               |     2.660 |
+|     U2                               |    15.130 |
+|       ALU_U                          |     0.611 |
+|       MUX2T1_32_0_U0                 |     0.206 |
+|       MUX2T1_32_0_U1                 |     0.153 |
+|       MUX2T1_32_0_U2                 |     0.561 |
+|       MUX2T1_32_0_U3                 |     0.124 |
+|       MUX4T1_32_0_U                  |     3.476 |
+|       PC_U                           |     1.242 |
+|       Regs_U                         |     8.235 |
+|   U10                                |     1.802 |
+|   U11                                |    15.072 |
+|     vga_controller                   |     2.795 |
+|     vga_debugger                     |    10.528 |
+|     vga_display                      |     1.749 |
+|       display_data_reg_0_63_0_2      |     0.005 |
+|       display_data_reg_0_63_3_5      |     0.001 |
+|       display_data_reg_1024_1087_0_2 |     0.004 |
+|       display_data_reg_1024_1087_3_5 |     0.001 |
+|       display_data_reg_1088_1151_0_2 |     0.005 |
+|       display_data_reg_1088_1151_3_5 |     0.002 |
+|       display_data_reg_1152_1215_0_2 |     0.004 |
+|       display_data_reg_1152_1215_3_5 |     0.001 |
+|       display_data_reg_1216_1279_0_2 |     0.004 |
+|       display_data_reg_1216_1279_3_5 |     0.001 |
+|       display_data_reg_1280_1343_0_2 |     0.004 |
 |       display_data_reg_1280_1343_3_5 |     0.001 |
-|       display_data_reg_128_191_0_2   |     0.002 |
-|       display_data_reg_128_191_3_5   |     0.001 |
-|       display_data_reg_1344_1407_0_2 |     0.002 |
-|       display_data_reg_1408_1471_0_2 |     0.002 |
-|       display_data_reg_1472_1535_0_2 |     0.002 |
-|       display_data_reg_1536_1599_0_2 |     0.002 |
+|       display_data_reg_128_191_0_2   |     0.005 |
+|       display_data_reg_128_191_3_5   |     0.002 |
+|       display_data_reg_1344_1407_0_2 |     0.005 |
+|       display_data_reg_1344_1407_3_5 |     0.001 |
+|       display_data_reg_1408_1471_0_2 |     0.004 |
+|       display_data_reg_1408_1471_3_5 |     0.002 |
+|       display_data_reg_1472_1535_0_2 |     0.005 |
+|       display_data_reg_1472_1535_3_5 |     0.002 |
+|       display_data_reg_1536_1599_0_2 |     0.004 |
 |       display_data_reg_1536_1599_3_5 |     0.001 |
-|       display_data_reg_1600_1663_0_2 |     0.002 |
-|       display_data_reg_1664_1727_0_2 |     0.002 |
-|       display_data_reg_1728_1791_0_2 |     0.002 |
-|       display_data_reg_1792_1855_0_2 |     0.002 |
-|       display_data_reg_1856_1919_0_2 |     0.003 |
-|       display_data_reg_1920_1983_0_2 |     0.002 |
-|       display_data_reg_192_255_0_2   |     0.002 |
-|       display_data_reg_1984_2047_0_2 |     0.003 |
+|       display_data_reg_1600_1663_0_2 |     0.005 |
+|       display_data_reg_1600_1663_3_5 |     0.002 |
+|       display_data_reg_1664_1727_0_2 |     0.005 |
+|       display_data_reg_1664_1727_3_5 |     0.001 |
+|       display_data_reg_1728_1791_0_2 |     0.004 |
+|       display_data_reg_1728_1791_3_5 |     0.001 |
+|       display_data_reg_1792_1855_0_2 |     0.004 |
+|       display_data_reg_1792_1855_3_5 |     0.002 |
+|       display_data_reg_1856_1919_0_2 |     0.005 |
+|       display_data_reg_1856_1919_3_5 |     0.001 |
+|       display_data_reg_1920_1983_0_2 |     0.005 |
+|       display_data_reg_1920_1983_3_5 |     0.002 |
+|       display_data_reg_192_255_0_2   |     0.005 |
+|       display_data_reg_192_255_3_5   |     0.002 |
+|       display_data_reg_1984_2047_0_2 |     0.004 |
 |       display_data_reg_1984_2047_3_5 |     0.001 |
-|       display_data_reg_2048_2111_0_2 |     0.002 |
-|       display_data_reg_2112_2175_0_2 |     0.002 |
-|       display_data_reg_2176_2239_0_2 |     0.002 |
-|       display_data_reg_2240_2303_0_2 |     0.002 |
-|       display_data_reg_2304_2367_0_2 |     0.002 |
-|       display_data_reg_2368_2431_0_2 |     0.002 |
-|       display_data_reg_2432_2495_0_2 |     0.002 |
-|       display_data_reg_2496_2559_0_2 |     0.002 |
-|       display_data_reg_2560_2623_0_2 |     0.002 |
-|       display_data_reg_256_319_0_2   |     0.002 |
-|       display_data_reg_2624_2687_0_2 |     0.002 |
-|       display_data_reg_2688_2751_0_2 |     0.002 |
-|       display_data_reg_2752_2815_0_2 |     0.002 |
-|       display_data_reg_2816_2879_0_2 |     0.002 |
-|       display_data_reg_2880_2943_0_2 |     0.002 |
-|       display_data_reg_2944_3007_0_2 |     0.002 |
-|       display_data_reg_3008_3071_0_2 |     0.003 |
+|       display_data_reg_2048_2111_0_2 |     0.005 |
+|       display_data_reg_2048_2111_3_5 |     0.002 |
+|       display_data_reg_2112_2175_0_2 |     0.004 |
+|       display_data_reg_2112_2175_3_5 |     0.001 |
+|       display_data_reg_2176_2239_0_2 |     0.003 |
+|       display_data_reg_2176_2239_3_5 |     0.001 |
+|       display_data_reg_2240_2303_0_2 |     0.005 |
+|       display_data_reg_2240_2303_3_5 |     0.001 |
+|       display_data_reg_2304_2367_0_2 |     0.004 |
+|       display_data_reg_2304_2367_3_5 |     0.001 |
+|       display_data_reg_2368_2431_0_2 |     0.005 |
+|       display_data_reg_2368_2431_3_5 |     0.001 |
+|       display_data_reg_2432_2495_0_2 |     0.004 |
+|       display_data_reg_2432_2495_3_5 |     0.001 |
+|       display_data_reg_2496_2559_0_2 |     0.006 |
+|       display_data_reg_2496_2559_3_5 |     0.001 |
+|       display_data_reg_2560_2623_0_2 |     0.004 |
+|       display_data_reg_2560_2623_3_5 |     0.002 |
+|       display_data_reg_256_319_0_2   |     0.004 |
+|       display_data_reg_256_319_3_5   |     0.002 |
+|       display_data_reg_2624_2687_0_2 |     0.006 |
+|       display_data_reg_2624_2687_3_5 |     0.001 |
+|       display_data_reg_2688_2751_0_2 |     0.005 |
+|       display_data_reg_2688_2751_3_5 |     0.001 |
+|       display_data_reg_2752_2815_0_2 |     0.004 |
+|       display_data_reg_2752_2815_3_5 |     0.001 |
+|       display_data_reg_2816_2879_0_2 |     0.005 |
+|       display_data_reg_2816_2879_3_5 |     0.002 |
+|       display_data_reg_2880_2943_0_2 |     0.005 |
+|       display_data_reg_2880_2943_3_5 |     0.001 |
+|       display_data_reg_2944_3007_0_2 |     0.005 |
+|       display_data_reg_2944_3007_3_5 |     0.001 |
+|       display_data_reg_3008_3071_0_2 |     0.004 |
 |       display_data_reg_3008_3071_3_5 |     0.001 |
-|       display_data_reg_3072_3135_0_2 |     0.002 |
-|       display_data_reg_3136_3199_0_2 |     0.002 |
-|       display_data_reg_3200_3263_0_2 |     0.002 |
-|       display_data_reg_320_383_0_2   |     0.002 |
-|       display_data_reg_3264_3327_0_2 |     0.002 |
-|       display_data_reg_3328_3391_0_2 |     0.002 |
-|       display_data_reg_3392_3455_0_2 |     0.002 |
+|       display_data_reg_3072_3135_0_2 |     0.004 |
+|       display_data_reg_3072_3135_3_5 |     0.001 |
+|       display_data_reg_3136_3199_0_2 |     0.005 |
+|       display_data_reg_3136_3199_3_5 |     0.002 |
+|       display_data_reg_3200_3263_0_2 |     0.004 |
+|       display_data_reg_3200_3263_3_5 |     0.002 |
+|       display_data_reg_320_383_0_2   |     0.004 |
+|       display_data_reg_320_383_6_7   |     0.001 |
+|       display_data_reg_3264_3327_0_2 |     0.005 |
+|       display_data_reg_3264_3327_3_5 |     0.001 |
+|       display_data_reg_3328_3391_0_2 |     0.004 |
+|       display_data_reg_3328_3391_3_5 |     0.001 |
+|       display_data_reg_3392_3455_0_2 |     0.005 |
 |       display_data_reg_3392_3455_3_5 |     0.001 |
-|       display_data_reg_3456_3519_0_2 |     0.002 |
-|       display_data_reg_3520_3583_0_2 |     0.002 |
-|       display_data_reg_3584_3647_0_2 |     0.002 |
-|       display_data_reg_3648_3711_0_2 |     0.002 |
-|       display_data_reg_3712_3775_0_2 |     0.003 |
-|       display_data_reg_3776_3839_0_2 |     0.002 |
-|       display_data_reg_3840_3903_0_2 |     0.002 |
-|       display_data_reg_384_447_0_2   |     0.002 |
-|       display_data_reg_3904_3967_0_2 |     0.002 |
-|       display_data_reg_3968_4031_0_2 |     0.002 |
-|       display_data_reg_4032_4095_0_2 |     0.002 |
-|       display_data_reg_448_511_0_2   |     0.002 |
-|       display_data_reg_512_575_0_2   |     0.002 |
-|       display_data_reg_576_639_0_2   |     0.002 |
-|       display_data_reg_640_703_0_2   |     0.002 |
-|       display_data_reg_64_127_0_2    |     0.002 |
-|       display_data_reg_704_767_0_2   |     0.002 |
-|       display_data_reg_768_831_0_2   |     0.002 |
-|       display_data_reg_832_895_0_2   |     0.002 |
-|       display_data_reg_896_959_0_2   |     0.002 |
-|       display_data_reg_960_1023_0_2  |     0.002 |
-|   U2                                 |     1.793 |
-|     U0                               |     1.793 |
-|       synth_options.dist_mem_inst    |     1.793 |
-|   U3                                 |     0.644 |
-|     U0                               |     0.644 |
-|       inst_blk_mem_gen               |     0.644 |
-|   U4                                 |     0.811 |
-|   U5                                 |     0.725 |
-|   U6                                 |     1.218 |
-|     M2                               |     0.290 |
-|     SM1                              |     0.928 |
-|       HTS0                           |     0.113 |
-|       HTS1                           |     0.107 |
-|       HTS2                           |     0.118 |
-|       HTS3                           |     0.111 |
-|       HTS4                           |     0.097 |
-|       HTS5                           |     0.123 |
-|       HTS6                           |     0.137 |
-|       HTS7                           |     0.122 |
-|   U7                                 |     0.146 |
-|     LED_P2S                          |     0.146 |
-|   U8                                 |     0.375 |
-|   U9                                 |     0.113 |
+|       display_data_reg_3456_3519_0_2 |     0.005 |
+|       display_data_reg_3456_3519_3_5 |     0.001 |
+|       display_data_reg_3520_3583_0_2 |     0.005 |
+|       display_data_reg_3520_3583_3_5 |     0.001 |
+|       display_data_reg_3584_3647_0_2 |     0.004 |
+|       display_data_reg_3584_3647_3_5 |     0.001 |
+|       display_data_reg_3648_3711_0_2 |     0.005 |
+|       display_data_reg_3648_3711_3_5 |     0.001 |
+|       display_data_reg_3712_3775_0_2 |     0.004 |
+|       display_data_reg_3712_3775_3_5 |     0.001 |
+|       display_data_reg_3776_3839_0_2 |     0.004 |
+|       display_data_reg_3776_3839_3_5 |     0.002 |
+|       display_data_reg_3840_3903_0_2 |     0.004 |
+|       display_data_reg_3840_3903_3_5 |     0.002 |
+|       display_data_reg_384_447_0_2   |     0.005 |
+|       display_data_reg_384_447_3_5   |     0.002 |
+|       display_data_reg_3904_3967_0_2 |     0.005 |
+|       display_data_reg_3904_3967_3_5 |     0.002 |
+|       display_data_reg_3968_4031_0_2 |     0.004 |
+|       display_data_reg_3968_4031_3_5 |     0.001 |
+|       display_data_reg_4032_4095_0_2 |     0.004 |
+|       display_data_reg_4032_4095_3_5 |     0.001 |
+|       display_data_reg_448_511_0_2   |     0.004 |
+|       display_data_reg_448_511_3_5   |     0.001 |
+|       display_data_reg_512_575_0_2   |     0.004 |
+|       display_data_reg_512_575_3_5   |     0.002 |
+|       display_data_reg_576_639_0_2   |     0.005 |
+|       display_data_reg_576_639_3_5   |     0.001 |
+|       display_data_reg_640_703_0_2   |     0.004 |
+|       display_data_reg_640_703_6_7   |     0.002 |
+|       display_data_reg_64_127_0_2    |     0.004 |
+|       display_data_reg_64_127_3_5    |     0.001 |
+|       display_data_reg_704_767_0_2   |     0.004 |
+|       display_data_reg_704_767_3_5   |     0.001 |
+|       display_data_reg_768_831_0_2   |     0.005 |
+|       display_data_reg_768_831_3_5   |     0.001 |
+|       display_data_reg_832_895_0_2   |     0.005 |
+|       display_data_reg_832_895_3_5   |     0.001 |
+|       display_data_reg_896_959_0_2   |     0.005 |
+|       display_data_reg_896_959_3_5   |     0.002 |
+|       display_data_reg_960_1023_0_2  |     0.004 |
+|       display_data_reg_960_1023_3_5  |     0.001 |
+|   U2                                 |     2.684 |
+|     U0                               |     2.684 |
+|       synth_options.dist_mem_inst    |     2.684 |
+|   U3                                 |     0.634 |
+|     U0                               |     0.634 |
+|       inst_blk_mem_gen               |     0.634 |
+|   U4                                 |     1.277 |
+|   U5                                 |     1.037 |
+|   U6                                 |     1.940 |
+|     M2                               |     0.599 |
+|     SM1                              |     1.341 |
+|       HTS0                           |     0.166 |
+|       HTS1                           |     0.174 |
+|       HTS2                           |     0.173 |
+|       HTS3                           |     0.164 |
+|       HTS4                           |     0.159 |
+|       HTS5                           |     0.163 |
+|       HTS6                           |     0.174 |
+|       HTS7                           |     0.168 |
+|   U7                                 |     0.172 |
+|     LED_P2S                          |     0.172 |
+|   U8                                 |     0.308 |
+|   U9                                 |     0.111 |
 +--------------------------------------+-----------+
 
 

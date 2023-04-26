@@ -90,6 +90,14 @@ module platform(
    wire [31:0] Reg29;
    wire [31:0] Reg30;
    wire [31:0] Reg31;
+   wire [4:0]  rs1;
+   wire [31:0] rs1_data;
+   wire [4:0]  rs2;
+   wire [31:0] rs2_data;
+   wire [4:0]  rd;
+   wire [31:0] reg_i_data;
+   wire        reg_wen;
+   wire [3:0]  MemRW;
 
    assign step = SW_OK[10]|BTN_OK[0];
    assign nClk_CPU = ~Clk_CPU;
@@ -152,6 +160,10 @@ module platform(
       .spo(inst)
    );
 
+   wire data_ram_we_1;
+   wire [3:0] data_ram_we;
+   assign data_ram_we = {4{data_ram_we_1}} & MemRW;
+
    blk_mem_gen_0 U3(
       .clka(nclk_100mhz),
       .wea(data_ram_we),
@@ -165,7 +177,7 @@ module platform(
       .rst(rst),
       .BTN(BTN_OK),
       .SW(SW_OK),
-      .mem_w(MemRW),
+      .mem_w(|MemRW),
       .Cpu_data2bus(Data_out),
       .addr_bus(Addr_out),
       .ram_data_out(ram_data_out),
@@ -177,7 +189,7 @@ module platform(
       .Cpu_data4bus(Cpu_data4bus),
       .ram_data_in(ram_data_in),
       .ram_addr(ram_addr),
-      .data_ram_we(data_ram_we),
+      .data_ram_we(data_ram_we_1),
       .GPIOf0000000_we(GPIOf0000000_we),
       .GPIOe0000000_we(GPIOe0000000_we),
       .counter_we(counter_we),

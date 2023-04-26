@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Apr 25 22:46:24 2023
+| Date         : Wed Apr 26 16:47:16 2023
 | Host         : yusux running 64-bit major release  (build 9200)
 | Command      : report_methodology -file platform_methodology_drc_routed.rpt -pb platform_methodology_drc_routed.pb -rpx platform_methodology_drc_routed.rpx
 | Design       : platform
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1013
+             Violations found: 1028
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell    | 1000       |
-| TIMING-20 | Warning          | Non-clocked latch              | 12         |
+| TIMING-20 | Warning          | Non-clocked latch              | 27         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -5061,42 +5061,117 @@ Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch U1/U1/Branch_reg cannot be properly analyzed as its control pin U1/U1/Branch_reg/G is not reached by a timing clock
+The latch U1/U1/Branch_Type_reg[0] cannot be properly analyzed as its control pin U1/U1/Branch_Type_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch U1/U1/ImmSel_reg[0] cannot be properly analyzed as its control pin U1/U1/ImmSel_reg[0]/G is not reached by a timing clock
+The latch U1/U1/Branch_Type_reg[1] cannot be properly analyzed as its control pin U1/U1/Branch_Type_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch U1/U1/ImmSel_reg[1] cannot be properly analyzed as its control pin U1/U1/ImmSel_reg[1]/G is not reached by a timing clock
+The latch U1/U1/Branch_Type_reg[2] cannot be properly analyzed as its control pin U1/U1/Branch_Type_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch U1/U1/MemRW_reg cannot be properly analyzed as its control pin U1/U1/MemRW_reg/G is not reached by a timing clock
+The latch U1/U1/Branch_reg cannot be properly analyzed as its control pin U1/U1/Branch_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch U1/U1/MemtoReg_reg[0] cannot be properly analyzed as its control pin U1/U1/MemtoReg_reg[0]/G is not reached by a timing clock
+The latch U1/U1/ImmSel_reg[0] cannot be properly analyzed as its control pin U1/U1/ImmSel_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch U1/U1/MemtoReg_reg[1] cannot be properly analyzed as its control pin U1/U1/MemtoReg_reg[1]/G is not reached by a timing clock
+The latch U1/U1/ImmSel_reg[1] cannot be properly analyzed as its control pin U1/U1/ImmSel_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
+The latch U1/U1/ImmSel_reg[2] cannot be properly analyzed as its control pin U1/U1/ImmSel_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch U1/U1/Jalr_reg cannot be properly analyzed as its control pin U1/U1/Jalr_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch U1/U1/Jump_reg cannot be properly analyzed as its control pin U1/U1/Jump_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch U1/U1/LuiAuipc_reg cannot be properly analyzed as its control pin U1/U1/LuiAuipc_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch U1/U1/MemRW_reg[0] cannot be properly analyzed as its control pin U1/U1/MemRW_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch U1/U1/MemRW_reg[1] cannot be properly analyzed as its control pin U1/U1/MemRW_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch U1/U1/MemRW_reg[3] cannot be properly analyzed as its control pin U1/U1/MemRW_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch U1/U1/Mem_Type_reg[0] cannot be properly analyzed as its control pin U1/U1/Mem_Type_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch U1/U1/Mem_Type_reg[1] cannot be properly analyzed as its control pin U1/U1/Mem_Type_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch U1/U1/Mem_Type_reg[2] cannot be properly analyzed as its control pin U1/U1/Mem_Type_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch U1/U1/MemtoReg_reg[0] cannot be properly analyzed as its control pin U1/U1/MemtoReg_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch U1/U1/MemtoReg_reg[1] cannot be properly analyzed as its control pin U1/U1/MemtoReg_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
 The latch U1/U1/RegWrite_reg cannot be properly analyzed as its control pin U1/U1/RegWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch U1/U1/Store_Type_reg[0] cannot be properly analyzed as its control pin U1/U1/Store_Type_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch U1/U1/Store_Type_reg[1] cannot be properly analyzed as its control pin U1/U1/Store_Type_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch U1/U1/Store_Type_reg[2] cannot be properly analyzed as its control pin U1/U1/Store_Type_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 12 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 27 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
