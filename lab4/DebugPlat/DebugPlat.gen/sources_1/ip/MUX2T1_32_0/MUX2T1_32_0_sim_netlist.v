@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 // Date        : Tue Apr 25 18:26:06 2023
 // Host        : yusux running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top MUX2T1_32_0 -prefix
+//               MUX2T1_32_0_ MUX2T1_32_0_sim_netlist.v
 // Design      : MUX2T1_32_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,33 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "MUX2T1_32_0,MUX2T1_32,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
-(* X_CORE_INFO = "MUX2T1_32,Vivado 2022.2" *) 
-(* NotValidForBitStream *)
-module MUX2T1_32_0
-   (s,
-    I0,
-    I1,
-    o);
-  input s;
-  input [31:0]I0;
-  input [31:0]I1;
-  output [31:0]o;
-
-  wire [31:0]I0;
-  wire [31:0]I1;
-  wire [31:0]o;
-  wire s;
-
-  (* black_box = "1" *) 
-  MUX2T1_32_0_MUX2T1_32 inst
-       (.I0(I0),
-        .I1(I1),
-        .o(o),
-        .s(s));
-endmodule
-
-(* ORIG_REF_NAME = "MUX2T1_32" *) 
 module MUX2T1_32_0_MUX2T1_32
    (s,
     I0,
@@ -278,6 +251,32 @@ module MUX2T1_32_0_MUX2T1_32
         .I1(I0[9]),
         .I2(s),
         .O(o[9]));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "MUX2T1_32_0,MUX2T1_32,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
+(* X_CORE_INFO = "MUX2T1_32,Vivado 2022.2" *) 
+(* NotValidForBitStream *)
+module MUX2T1_32_0
+   (s,
+    I0,
+    I1,
+    o);
+  input s;
+  input [31:0]I0;
+  input [31:0]I1;
+  output [31:0]o;
+
+  wire [31:0]I0;
+  wire [31:0]I1;
+  wire [31:0]o;
+  wire s;
+
+  (* black_box = "1" *) 
+  MUX2T1_32_0_MUX2T1_32 inst
+       (.I0(I0),
+        .I1(I1),
+        .o(o),
+        .s(s));
 endmodule
 `ifndef GLBL
 `define GLBL

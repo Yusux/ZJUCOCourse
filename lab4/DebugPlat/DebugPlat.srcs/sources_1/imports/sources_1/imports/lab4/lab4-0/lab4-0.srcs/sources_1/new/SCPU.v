@@ -24,6 +24,7 @@
 module SCPU(
       input wire         clk,
       input wire         rst,
+      input wire         INT,
       input wire         MIO_ready,
       input wire[31:0]   inst_in,
       input wire[31:0]   Data_in,
@@ -70,7 +71,12 @@ module SCPU(
       output wire [31:0] Reg28,
       output wire [31:0] Reg29,
       output wire [31:0] Reg30,
-      output wire [31:0] Reg31
+      output wire [31:0] Reg31,
+      output wire [31:0] mstatus,
+      output wire [31:0] mtvec,
+      output wire [31:0] mcause,
+      output wire [31:0] mtval,
+      output wire [31:0] mepc
    );
 
    wire [2:0] ImmSel;
@@ -85,6 +91,9 @@ module SCPU(
    wire Branch;
    wire RegWrite;
    wire LuiAuipc;
+   wire Ecall;
+   wire Mret;
+   wire Illegal_Inst;
    wire [3:0]  MemRW_ori;
    wire [31:0] Data_out_ori;
   
@@ -99,9 +108,7 @@ module SCPU(
                      { Data_out_ori[7:0], 24'b0 };
 
    SCPU_ctrl U1(
-      .OPcode(inst_in[6:2]),
-      .Fun3(inst_in[14:12]),
-      .Fun7(inst_in[30]),
+      .inst_in(inst_in),
       .MIO_ready(MIO_ready),
       .ImmSel(ImmSel),
       .ALUSrc_B(ALUSrc_B),
@@ -116,12 +123,16 @@ module SCPU(
       .Mem_Type(Mem_Type),
       .Store_Type(Store_Type),
       .Branch_Type(Branch_Type),
-      .LuiAuipc(LuiAuipc)
+      .LuiAuipc(LuiAuipc),
+      .Ecall(Ecall),
+      .Mret(Mret),
+      .Illegal_Inst(Illegal_Inst)
    );
 
    DataPath U2(
       .clk(clk),
       .rst(rst),
+      .INT(INT),
       .inst_field(inst_in),
       .Data_in(Data_in),
       .ALU_Control(ALU_Control),
@@ -136,6 +147,9 @@ module SCPU(
       .Branch_Type(Branch_Type),
       .Store_Type(Store_Type),
       .LuiAuipc(LuiAuipc),
+      .Ecall(Ecall),
+      .Mret(Mret),
+      .Illegal_Inst(Illegal_Inst),
       .PC_out(PC_out),
       .Data_out(Data_out_ori),
       .ALU_out(Addr_out),
@@ -177,7 +191,12 @@ module SCPU(
       .Reg28(Reg28),
       .Reg29(Reg29),
       .Reg30(Reg30),
-      .Reg31(Reg31)
+      .Reg31(Reg31),
+      .mstatus(mstatus),
+      .mtvec(mtvec),
+      .mcause(mcause),
+      .mtval(mtval),
+      .mepc(mepc)
    );
     
 endmodule

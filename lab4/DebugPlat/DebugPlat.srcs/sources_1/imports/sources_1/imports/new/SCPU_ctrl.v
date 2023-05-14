@@ -31,9 +31,7 @@
 // /*-----------------------------------*/
 
 module SCPU_ctrl(
-      input [4:0]       OPcode,
-      input [2:0]       Fun3,
-      input             Fun7,
+      input [31:0]      inst_in,
       input             MIO_ready,
       output reg [2:0]  ImmSel,
       output reg        ALUSrc_B,
@@ -48,8 +46,18 @@ module SCPU_ctrl(
       output reg [2:0]  Mem_Type,
       output reg [2:0]  Store_Type,
       output reg [2:0]  Branch_Type,
-      output reg        LuiAuipc
+      output reg        LuiAuipc,
+      output reg        Ecall,
+      output reg        Mret,
+      output reg        Illegal_Inst
    );
+
+   wire [4:0] OPcode;
+   wire [2:0] Fun3;
+   wire       Fun7;
+   assign OPcode = inst_in[6:2];
+   assign Fun3 = inst_in[14:12];
+   assign Fun7 = inst_in[30];
 
    initial begin
       ImmSel <= 2'b00;
@@ -66,6 +74,9 @@ module SCPU_ctrl(
       Store_Type <= 3'b000;
       Branch_Type <= 3'b000;
       LuiAuipc <= 1'b0;
+      Ecall <= 1'b0;
+      Mret <= 1'b0;
+      Illegal_Inst <= 1'b0;
    end
 
    always @* begin
@@ -84,6 +95,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
             case(Fun3)
                `FUNC_ADD: begin
                   case(Fun7)
@@ -119,6 +133,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
             case(Fun3)
                `FUNC_ADD: ALU_Control <= `ALU_OP_ADD;
                `FUNC_SL: ALU_Control <= `ALU_OP_SLL;
@@ -149,6 +166,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
             case(Fun3)
                `FUNC_BYTE: Mem_Type <= `FUNC_BYTE;
                `FUNC_HALF: Mem_Type <= `FUNC_HALF;
@@ -172,6 +192,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
          end
          `OPCODE_STORE: begin
             ImmSel <= `IMM_SEL_S;
@@ -186,6 +209,9 @@ module SCPU_ctrl(
             Mem_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
             case(Fun3)
                `FUNC_BYTE: begin
                   Store_Type <= `FUNC_BYTE;
@@ -214,6 +240,9 @@ module SCPU_ctrl(
             Mem_Type <= 3'b000;
             Store_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
             case(Fun3)
                `FUNC_EQ: begin
                   Branch_Type <= `FUNC_EQ;
@@ -256,6 +285,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
          end
          `OPCODE_LUI: begin
             ImmSel <= `IMM_SEL_U;
@@ -272,6 +304,9 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
          end
          `OPCODE_AUIPC: begin
             ImmSel <= `IMM_SEL_U;
@@ -288,6 +323,89 @@ module SCPU_ctrl(
             Store_Type <= 3'b000;
             Branch_Type <= 3'b000;
             LuiAuipc <= 1'b1;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b0;
+         end
+         `OPCODE_ECALL: begin
+            // if is `Ecall`, judge if it is `Ecall` and if it is, return Ecall with 1
+            if (inst_in == `INST_ECALL) begin
+               ImmSel <= `IMM_SEL_I;
+               ALUSrc_B <= 1'b0;
+               MemtoReg <= `MEM2REG_ALU;
+               Jump <= 1'b0;
+               Jalr <= 1'b0;
+               Branch <= 1'b0;
+               RegWrite <= 1'b0;
+               MemRW <= 4'b0;
+               ALU_Control <= `ALU_OP_ADD;
+               CPU_MIO <= 1'b0;
+               Mem_Type <= 3'b000;
+               Store_Type <= 3'b000;
+               Branch_Type <= 3'b000;
+               LuiAuipc <= 1'b0;
+               Ecall <= 1'b1;
+               Mret <= 1'b0;
+               Illegal_Inst <= 1'b0;
+            // if is `Mret`, judge if it is `Mret` and if it is, return Mret with 1
+            end else if (inst_in == `INST_MRET) begin
+               ImmSel <= `IMM_SEL_I;
+               ALUSrc_B <= 1'b0;
+               MemtoReg <= `MEM2REG_ALU;
+               Jump <= 1'b0;
+               Jalr <= 1'b0;
+               Branch <= 1'b0;
+               RegWrite <= 1'b0;
+               MemRW <= 4'b0;
+               ALU_Control <= `ALU_OP_ADD;
+               CPU_MIO <= 1'b0;
+               Mem_Type <= 3'b000;
+               Store_Type <= 3'b000;
+               Branch_Type <= 3'b000;
+               LuiAuipc <= 1'b0;
+               Ecall <= 1'b0;
+               Mret <= 1'b1;
+               Illegal_Inst <= 1'b0;
+            end else begin
+               // if not `Ecall` or `Mret` return illegal instruction with 1
+               ImmSel <= `IMM_SEL_I;
+               ALUSrc_B <= 1'b0;
+               MemtoReg <= `MEM2REG_ALU;
+               Jump <= 1'b0;
+               Jalr <= 1'b0;
+               Branch <= 1'b0;
+               RegWrite <= 1'b0;
+               MemRW <= 4'b0;
+               ALU_Control <= `ALU_OP_ADD;
+               CPU_MIO <= 1'b0;
+               Mem_Type <= 3'b000;
+               Store_Type <= 3'b000;
+               Branch_Type <= 3'b000;
+               LuiAuipc <= 1'b0;
+               Ecall <= 1'b0;
+               Mret <= 1'b0;
+               Illegal_Inst <= 1'b1;
+            end
+         end
+         // default return illegal instruction with 1
+         default: begin
+            ImmSel <= `IMM_SEL_I;
+            ALUSrc_B <= 1'b0;
+            MemtoReg <= `MEM2REG_ALU;
+            Jump <= 1'b0;
+            Jalr <= 1'b0;
+            Branch <= 1'b0;
+            RegWrite <= 1'b0;
+            MemRW <= 4'b0;
+            ALU_Control <= `ALU_OP_ADD;
+            CPU_MIO <= 1'b0;
+            Mem_Type <= 3'b000;
+            Store_Type <= 3'b000;
+            Branch_Type <= 3'b000;
+            LuiAuipc <= 1'b0;
+            Ecall <= 1'b0;
+            Mret <= 1'b0;
+            Illegal_Inst <= 1'b1;
          end
       endcase
    end

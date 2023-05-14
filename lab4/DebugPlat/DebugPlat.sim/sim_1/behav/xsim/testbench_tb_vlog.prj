@@ -5,9 +5,12 @@ verilog xil_defaultlib  --include "../../../../DebugPlat.srcs/sources_1/imports/
 "../../../../DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0_sim_netlist.v" \
 "../../../../DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0_sim_netlist.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ALU.v" \
+"../../../../DebugPlat.srcs/sources_1/new/Branch_Checker.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v" \
+"../../../../DebugPlat.srcs/sources_1/new/MemDataModer.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v" \
+"../../../../DebugPlat.srcs/sources_1/new/RV_INT.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v" \
 "../../../../DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v" \

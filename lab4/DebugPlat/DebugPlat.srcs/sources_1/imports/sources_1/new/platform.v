@@ -98,6 +98,11 @@ module platform(
    wire [31:0] reg_i_data;
    wire        reg_wen;
    wire [3:0]  MemRW;
+   wire [31:0] mstatus;
+   wire [31:0] mtvec;
+   wire [31:0] mcause;
+   wire [31:0] mtval;
+   wire [31:0] mepc;
 
    assign step = SW_OK[10]|BTN_OK[0];
    assign nClk_CPU = ~Clk_CPU;
@@ -106,6 +111,7 @@ module platform(
    SCPU U1(
       .clk(Clk_CPU),
       .rst(rst),
+      .INT(SW_OK[15]),
       .MIO_ready(1'b1),
       .inst_in(inst),
       .Data_in(Cpu_data4bus),
@@ -152,7 +158,12 @@ module platform(
       .Reg28(Reg28),
       .Reg29(Reg29),
       .Reg30(Reg30),
-      .Reg31(Reg31)
+      .Reg31(Reg31),
+      .mstatus(mstatus),
+      .mtvec(mtvec),
+      .mcause(mcause),
+      .mtval(mtval),
+      .mepc(mepc)
    );
 
    dist_mem_gen_0 U2(
@@ -331,6 +342,11 @@ module platform(
       .Reg29(Reg29),
       .Reg30(Reg30),
       .Reg31(Reg31),
+      .mstatus_o(mstatus),
+      .mcause_o(mcause),
+      .mepc_o(mepc),
+      .mtval_o(mtval),
+      .mtvec_o(mtvec),
       .hs(HSYNC),
       .vs(VSYNC),
       .vga_r(Red[3:0]),

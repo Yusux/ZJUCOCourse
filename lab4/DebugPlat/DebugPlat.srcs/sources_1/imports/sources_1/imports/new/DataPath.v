@@ -23,6 +23,7 @@
 module DataPath(
       input wire         clk,
       input wire         rst,
+      input wire         INT,
       input wire [31:0]  inst_field,
       input wire [31:0]  Data_in,
       input wire [3:0]   ALU_Control,
@@ -37,6 +38,9 @@ module DataPath(
       input wire [2:0]   Store_Type,
       input wire [2:0]   Branch_Type,
       input wire         LuiAuipc,
+      input wire         Ecall,
+      input wire         Mret,
+      input wire         Illegal_Inst,
       output wire [31:0] PC_out,
       output wire [31:0] Data_out,
       output wire [31:0] ALU_out,
@@ -78,7 +82,12 @@ module DataPath(
       output wire [31:0] Reg28,
       output wire [31:0] Reg29,
       output wire [31:0] Reg30,
-      output wire [31:0] Reg31
+      output wire [31:0] Reg31,
+      output wire [31:0] mstatus,
+      output wire [31:0] mtvec,
+      output wire [31:0] mcause,
+      output wire [31:0] mtval,
+      output wire [31:0] mepc
    );
 
    wire [31:0] Imm_out;
@@ -124,13 +133,31 @@ module DataPath(
       .o(PC_MUX2T1_32_0_U0_o)
    );
 
+   wire [31:0] PC_BFINT;
 
    MUX2T1_32_0 MUX2T1_32_0_U1(
       .I0(PC_MUX2T1_32_0_U0_o),
       .I1(ALU_out),
       .s(Jalr),
-      .o(PC_addr_next)
+      .o(PC_BFINT)
    );
+
+   RV_INT RV_INT_U(
+      .clk(clk),
+      .rst(rst),
+      .INT(INT),
+      .ecall(Ecall),
+      .mret(Mret),
+      .illegal_inst(Illegal_Inst),
+      .pc_next(PC_BFINT),
+      .pc(PC_addr_next),
+      .debug_mstatus(mstatus),
+      .debug_mtvec(mtvec),
+      .debug_mcause(mcause),
+      .debug_mtval(mtval),
+      .debug_mepc(mepc)
+   );
+
 
    PC PC_U(
       .clk(clk),
@@ -139,7 +166,6 @@ module DataPath(
       .D(PC_addr_next),
       .Q(PC_out)
    );
-
 
    MUX2T1_32_0 MUX2T1_32_0_U2(
       .I0(rs2_data),

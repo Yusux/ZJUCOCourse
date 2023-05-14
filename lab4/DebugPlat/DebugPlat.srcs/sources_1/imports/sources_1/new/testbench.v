@@ -1,6 +1,7 @@
 module testbench(
     input clk,
-    input rst
+    input rst,
+    input INT
 );
 
     /* SCPU 中接出 */
@@ -17,6 +18,7 @@ module testbench(
     SCPU u0(
         .clk(clk),
         .rst(rst),
+        .INT(INT),
         .Data_in(douta),
         .MIO_ready(CPU_MIO),
         .inst_in(spo),

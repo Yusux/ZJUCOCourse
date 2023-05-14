@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Wed Apr 26 13:55:08 2023
+// Date        : Sun May 14 14:36:58 2023
 // Host        : yusux running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top dist_mem_gen_0 -prefix
+//               dist_mem_gen_0_ dist_mem_gen_0_stub.v
 // Design      : dist_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k160tffg676-2L

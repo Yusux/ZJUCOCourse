@@ -143,9 +143,9 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.runs/synth_1/platform.dcp
+  read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci
   read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci
-  read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
   read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf
   read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf

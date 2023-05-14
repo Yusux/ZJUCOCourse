@@ -70,6 +70,11 @@ module VGA(
    input wire [31:0] Reg29,
    input wire [31:0] Reg30,
    input wire [31:0] Reg31,
+   input wire [31:0] mstatus_o,
+   input wire [31:0] mcause_o,
+   input wire [31:0] mepc_o,
+   input wire [31:0] mtval_o,
+   input wire [31:0] mtvec_o,
     
    output wire hs,
    output wire vs,
@@ -174,11 +179,11 @@ module VGA(
          .t4            (Reg29          ),
          .t5            (Reg30          ),
          .t6            (Reg31          ),
-         .mstatus_o     (               ),
-         .mcause_o      (               ),
-         .mepc_o        (               ),
-         .mtval_o       (               ),
-         .mtvec_o       (               ),
+         .mstatus_o     (mstatus_o      ),
+         .mcause_o      (mcause_o       ),
+         .mepc_o        (mepc_o         ),
+         .mtval_o       (mtval_o        ),
+         .mtvec_o       (mtvec_o        ),
          .mie_o         (               ),
          .mip_o         (               )
    );

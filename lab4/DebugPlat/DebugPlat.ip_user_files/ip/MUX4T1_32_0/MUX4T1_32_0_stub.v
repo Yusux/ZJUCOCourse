@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 // Date        : Tue Apr 25 18:27:03 2023
 // Host        : yusux running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top MUX4T1_32_0 -prefix
+//               MUX4T1_32_0_ MUX4T1_32_0_stub.v
 // Design      : MUX4T1_32_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k160tffg676-2L
