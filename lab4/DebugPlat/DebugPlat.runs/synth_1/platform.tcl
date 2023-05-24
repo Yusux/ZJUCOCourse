@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -132,15 +131,15 @@ read_verilog -library xil_defaultlib {
   D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.v
   D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v
 }
-read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-
 read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci
 
 read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci
 
 read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_ooc.xdc]
+
+read_ip -quiet D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab4/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf
 read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf
@@ -160,8 +159,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc
 set_property used_in_implementation false [get_files D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/utils_1/imports/synth_1/platform.dcp

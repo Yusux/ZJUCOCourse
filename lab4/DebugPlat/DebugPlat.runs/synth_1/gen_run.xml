@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1684046190" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/platform.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1684922200" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/platform.dcp">
   <File Type="PA-TCL" Name="platform.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="platform_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="platform_reports.tcl"/>
@@ -57,13 +57,6 @@
         <Attr Name="ImportTime" Val="1681823602"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ALU.v">
@@ -371,6 +364,26 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SCPU_ctrl_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab4-1_2/lab4-1_2.srcs/sim_1/new/SCPU_ctrl_tb.v"/>
+        <Attr Name="ImportTime" Val="1681883162"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ImmGen_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab4-1_2/lab4-1_2.srcs/sim_1/new/ImmGen_tb.v"/>
+        <Attr Name="ImportTime" Val="1681881652"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="platform"/>
@@ -412,4 +425,5 @@
   <BlockFileSet Type="BlockSrcs" Name="MUX2T1_32_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MUX4T1_32_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

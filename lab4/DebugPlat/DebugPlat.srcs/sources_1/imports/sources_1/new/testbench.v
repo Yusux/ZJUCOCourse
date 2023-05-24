@@ -8,7 +8,7 @@ module testbench(
     wire [31:0] Addr_out;
     wire [31:0] Data_out;       
     wire        CPU_MIO;
-    wire        MemRW;
+    wire [3:0]  MemRW;
     wire [31:0] PC_out;
     /* RAM 接出 */
     wire [31:0] douta;

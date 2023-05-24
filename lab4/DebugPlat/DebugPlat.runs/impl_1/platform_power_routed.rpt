@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sun May 14 14:39:20 2023
+| Date             : Wed May 24 17:59:22 2023
 | Host             : yusux running 64-bit major release  (build 9200)
 | Command          : report_power -file platform_power_routed.rpt -pb platform_power_summary_routed.pb -rpx platform_power_routed.rpx
 | Design           : platform
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 82.797 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 82.796 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 80.735                           |
+| Dynamic (W)              | 80.734                           |
 | Device Static (W)        | 2.062                            |
 | Effective TJA (C/W)      | 1.9                              |
 | Max Ambient (C)          | 0.0                              |
@@ -60,11 +60,11 @@ Table of Contents
 |   Register               |     0.117 |     1627 |    202800 |            0.80 |
 |   BUFG                   |     0.033 |        5 |        32 |           15.63 |
 |   Others                 |     0.000 |       30 |       --- |             --- |
-| Signals                  |    39.297 |     5500 |       --- |             --- |
+| Signals                  |    39.296 |     5500 |       --- |             --- |
 | Block RAM                |     0.129 |        1 |       325 |            0.31 |
 | I/O                      |    13.749 |       49 |       400 |           12.25 |
 | Static Power             |     2.062 |          |           |                 |
-| Total                    |    82.797 |          |           |                 |
+| Total                    |    82.796 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    68.828 |      67.065 |      1.763 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    68.826 |      67.064 |      1.763 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.661 |       0.553 |      0.108 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     3.518 |       3.517 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,7 +142,7 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| platform                             |    80.735 |
+| platform                             |    80.734 |
 |   U1                                 |    36.726 |
 |     U1                               |     3.620 |
 |     U2                               |    33.106 |
