@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Jun 11 00:55:36 2023
-# Process ID: 6248
+# Start of session at: Mon Jun 12 15:58:26 2023
+# Process ID: 29592
 # Current directory: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1
 # Command line: vivado.exe -log platform.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source platform.tcl
 # Log file: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/platform.vds
@@ -28,10 +28,8 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17368
+INFO: [Synth 8-7075] Helper process launched with PID 32932
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'jump_inv', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:209]
-INFO: [Synth 8-11241] undeclared symbol 'MAData_out', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:495]
 INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
 INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
 INFO: [Synth 8-11241] undeclared symbol 'c', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
@@ -40,60 +38,58 @@ INFO: [Synth 8-11241] undeclared symbol 'e', assumed default net type 'wire' [D:
 INFO: [Synth 8-11241] undeclared symbol 'f', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
 INFO: [Synth 8-11241] undeclared symbol 'g', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
 INFO: [Synth 8-11241] undeclared symbol 'p', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
-INFO: [Synth 8-11241] undeclared symbol 'PC_ID', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:122]
-INFO: [Synth 8-11241] undeclared symbol 'inst_ID', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:123]
-INFO: [Synth 8-11241] undeclared symbol 'PC_Ex', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:125]
-INFO: [Synth 8-11241] undeclared symbol 'MemRW_Ex', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:136]
-INFO: [Synth 8-11241] undeclared symbol 'Data_out', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:150]
-INFO: [Synth 8-11241] undeclared symbol 'Addr_out', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:151]
-INFO: [Synth 8-11241] undeclared symbol 'MemRW_Mem', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:152]
-INFO: [Synth 8-11241] undeclared symbol 'Data_out_WB', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:161]
-INFO: [Synth 8-11241] undeclared symbol 'step', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:102]
-INFO: [Synth 8-11241] undeclared symbol 'nClk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:103]
-INFO: [Synth 8-11241] undeclared symbol 'nclk_100mhz', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:104]
-INFO: [Synth 8-11241] undeclared symbol 'Clk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:149]
-INFO: [Synth 8-11241] undeclared symbol 'rst', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:150]
-INFO: [Synth 8-11241] undeclared symbol 'counter0_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:260]
-INFO: [Synth 8-11241] undeclared symbol 'counter1_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:261]
-INFO: [Synth 8-11241] undeclared symbol 'counter2_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:262]
-INFO: [Synth 8-11241] undeclared symbol 'GPIOf0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:267]
-INFO: [Synth 8-11241] undeclared symbol 'GPIOe0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:268]
-INFO: [Synth 8-11241] undeclared symbol 'counter_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:269]
+INFO: [Synth 8-11241] undeclared symbol 'step', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:146]
+INFO: [Synth 8-11241] undeclared symbol 'nClk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:147]
+INFO: [Synth 8-11241] undeclared symbol 'nclk_100mhz', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:148]
+INFO: [Synth 8-11241] undeclared symbol 'Clk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:152]
+INFO: [Synth 8-11241] undeclared symbol 'rst', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:153]
+INFO: [Synth 8-11241] undeclared symbol 'counter0_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:186]
+INFO: [Synth 8-11241] undeclared symbol 'counter1_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:187]
+INFO: [Synth 8-11241] undeclared symbol 'counter2_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:188]
+INFO: [Synth 8-11241] undeclared symbol 'GPIOf0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:193]
+INFO: [Synth 8-11241] undeclared symbol 'GPIOe0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:194]
+INFO: [Synth 8-11241] undeclared symbol 'counter_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:195]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1246.270 ; gain = 410.230
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.277 ; gain = 410.191
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'platform' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:22]
-INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'platform' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:24]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:25]
 INFO: [Synth 8-6157] synthesizing module 'SCPU_ctrl' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:33]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:152]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:189]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:217]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:72]
 INFO: [Synth 8-6155] done synthesizing module 'SCPU_ctrl' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:33]
-INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:24]
 INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v:23]
-INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/MUX2T1_32_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/MUX2T1_32_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/MUX2T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/MUX2T1_32_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Stall_unit' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Stall_unit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Stall_unit' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Stall_unit.v:22]
 INFO: [Synth 8-6157] synthesizing module 'ImmGen' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v:24]
 INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v:24]
 INFO: [Synth 8-6157] synthesizing module 'Regs' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Regs' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding_unit' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Forwarding_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding_unit' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Forwarding_unit.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ALU.v:34]
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ALU.v:34]
 INFO: [Synth 8-6157] synthesizing module 'MemDataModer' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/MemDataModer.v:24]
 INFO: [Synth 8-6155] done synthesizing module 'MemDataModer' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/MemDataModer.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Loadstore_forwarding' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Loadstore_forwarding.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Loadstore_forwarding' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Loadstore_forwarding.v:24]
 INFO: [Synth 8-6157] synthesizing module 'Branch_Checker' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Branch_Checker.v:24]
 INFO: [Synth 8-6155] done synthesizing module 'Branch_Checker' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Branch_Checker.v:24]
-INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/MUX4T1_32_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/MUX4T1_32_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'DataPath' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:24]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:154]
-INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/dist_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/dist_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-6248-yusux/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/MUX4T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/MUX4T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:25]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:157]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-29592-yusux/realtime/blk_mem_gen_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.v:15]
 INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Multi_8CH32.v:15]
 INFO: [Synth 8-6157] synthesizing module 'SSeg7_Dev' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg7_Dev.v:23]
@@ -126,259 +122,147 @@ INFO: [Synth 8-6157] synthesizing module 'SSeg_map' [D:/Project/Vivado/lab5/Debu
 INFO: [Synth 8-6155] done synthesizing module 'SSeg_map' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg_map.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'SSeg7_Dev' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg7_Dev.v:23]
 INFO: [Synth 8-6157] synthesizing module 'SPIO' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SPIO.v:15]
-WARNING: [Synth 8-7071] port 'GPIOf0' of module 'SPIO' is unconnected for instance 'U7' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:308]
-WARNING: [Synth 8-7023] instance 'U7' of module 'SPIO' has 12 connections declared, but only 11 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:308]
+WARNING: [Synth 8-7071] port 'GPIOf0' of module 'SPIO' is unconnected for instance 'U7' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:234]
+WARNING: [Synth 8-7023] instance 'U7' of module 'SPIO' has 12 connections declared, but only 11 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:234]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.v:15]
 INFO: [Synth 8-6157] synthesizing module 'SAnti_jitter' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.v:15]
-WARNING: [Synth 8-7071] port 'readn' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
-WARNING: [Synth 8-7071] port 'Key_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
-WARNING: [Synth 8-7071] port 'Key_ready' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
-WARNING: [Synth 8-7071] port 'pulse_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
-WARNING: [Synth 8-7071] port 'CR' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
-WARNING: [Synth 8-7023] instance 'U9' of module 'SAnti_jitter' has 13 connections declared, but only 8 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:332]
+WARNING: [Synth 8-7071] port 'readn' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+WARNING: [Synth 8-7071] port 'Key_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+WARNING: [Synth 8-7071] port 'Key_ready' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+WARNING: [Synth 8-7071] port 'pulse_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+WARNING: [Synth 8-7071] port 'CR' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+WARNING: [Synth 8-7023] instance 'U9' of module 'SAnti_jitter' has 13 connections declared, but only 8 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
 INFO: [Synth 8-6157] synthesizing module 'Counter_x' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.v:15]
-INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:2]
-INFO: [Synth 8-6157] synthesizing module 'VgaController' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaController.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'VgaController' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaController.v:1]
-INFO: [Synth 8-6157] synthesizing module 'VgaDisplay' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:1]
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'D://vga_debugger.mem'; please make sure the file is added to project and has read permission, ignoring [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:15]
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'D://font_8x16.mem'; please make sure the file is added to project and has read permission, ignoring [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'VgaDisplay' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:1]
-INFO: [Synth 8-6157] synthesizing module 'VgaDebugger' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:31]
-INFO: [Synth 8-6157] synthesizing module 'Hex2Ascii' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Hex2Ascii' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'VgaDebugger' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:2]
-WARNING: [Synth 8-689] width (4) of port connection 'IdEx_mem_wen' does not match port width (1) of module 'VGA' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:379]
-WARNING: [Synth 8-7071] port 'MaWb_reg_w_data' of module 'VGA' is unconnected for instance 'U11' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:359]
-WARNING: [Synth 8-7023] instance 'U11' of module 'VGA' has 82 connections declared, but only 81 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:359]
-INFO: [Synth 8-6155] done synthesizing module 'platform' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:22]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/EDIF/VGA_stub.v:15]
+WARNING: [Synth 8-689] width (3) of port connection 'IdEx_is_imm' does not match port width (1) of module 'VGA_bbox_6' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:286]
+WARNING: [Synth 8-689] width (4) of port connection 'IdEx_mem_wen' does not match port width (1) of module 'VGA_bbox_6' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:286]
+WARNING: [Synth 8-689] width (4) of port connection 'IdEx_mem_ren' does not match port width (1) of module 'VGA_bbox_6' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:286]
+WARNING: [Synth 8-689] width (4) of port connection 'ExMa_mem_wen' does not match port width (1) of module 'VGA_bbox_6' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:286]
+WARNING: [Synth 8-689] width (4) of port connection 'ExMa_mem_ren' does not match port width (1) of module 'VGA_bbox_6' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:286]
+INFO: [Synth 8-6155] done synthesizing module 'platform' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:24]
 WARNING: [Synth 8-7137] Register buffer_reg in module P2S has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/P2S.v:51]
-WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-WARNING: [Synth 8-3848] Net fonts_data in module/entity VgaDisplay does not have driver. [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:24]
-INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7129] Port IfId_pc[31] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[30] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[29] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[28] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[27] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[26] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[25] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[24] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[23] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[22] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[21] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[20] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[19] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[18] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[17] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[16] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[15] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[14] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[13] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[12] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[11] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[10] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[9] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[8] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[7] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[6] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[5] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[4] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[3] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[2] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[1] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_pc[0] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[31] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[30] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[29] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[28] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[27] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[26] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[25] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[24] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[23] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[22] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[21] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[20] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[19] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[18] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[17] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[16] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[15] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[14] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[13] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[12] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[11] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[10] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[9] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[8] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[7] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[6] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[5] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[4] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[3] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[2] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[1] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_inst[0] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IfId_valid in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[31] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[30] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[29] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[28] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[27] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[26] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[25] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[24] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[23] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[22] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[21] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[20] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[19] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[18] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[17] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[16] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[15] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[14] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[13] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[12] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[11] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[10] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[9] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[8] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[7] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[6] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[5] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[4] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[3] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[2] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[1] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_pc[0] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_inst[31] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_inst[30] in module VGA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IdEx_inst[29] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[63] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[62] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[61] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[60] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[59] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[58] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[57] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[56] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[55] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[54] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[53] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[52] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[51] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[50] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[49] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[48] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[47] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[46] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[45] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[44] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[43] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[42] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[41] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[40] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[39] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[38] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[37] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[36] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[35] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[34] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[33] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[32] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[31] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[30] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[29] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[28] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[27] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[26] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[25] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[19] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[18] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[17] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[16] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[15] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[14] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[13] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[12] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[11] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[10] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[9] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[8] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[7] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[31] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[30] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[29] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[28] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[27] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[26] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[25] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[24] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[23] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[22] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[21] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[20] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[19] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[18] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[17] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[16] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[15] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[14] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[13] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[12] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[0] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[31] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[30] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[29] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[28] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[27] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[26] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[25] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[19] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[18] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[17] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[16] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[15] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[14] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[13] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[12] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[11] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[10] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[9] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[8] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[7] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IdEx_inst[31] in module Stall_unit is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1382.766 ; gain = 546.727
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.207 ; gain = 514.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1382.766 ; gain = 546.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.207 ; gain = 514.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1382.766 ; gain = 546.727
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.207 ; gain = 514.121
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1382.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1350.961 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
 Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U0'
 Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U0'
 Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U1'
@@ -389,17 +273,17 @@ Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MU
 Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U3'
 Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0/MUX4T1_32_0_in_context.xdc] for cell 'U1/U2/MUX4T1_32_0_U'
 Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0/MUX4T1_32_0_in_context.xdc] for cell 'U1/U2/MUX4T1_32_0_U'
-Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
-Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
 Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U2'
 Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U2'
 Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
 Finished Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/platform_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/platform_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1411.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1457.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 320 instances were transformed.
   AND2 => LUT2: 8 instances
@@ -410,32 +294,32 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1411.828 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1457.363 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX4T1_32_0_U. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for U3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U2. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'P2S'
 WARNING: [Synth 8-327] inferring latch for variable 'ImmSel_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:74]
@@ -461,7 +345,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'LuiAuipc_reg' [D:/Project/V
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'P2S'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -470,30 +354,25 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   32 Bit       Adders := 3     
 	   3 Input   32 Bit       Adders := 1     
-	   2 Input   12 Bit       Adders := 1     
-	   2 Input   10 Bit       Adders := 3     
-	   2 Input    9 Bit       Adders := 1     
-	   3 Input    8 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
-	               32 Bit    Registers := 54    
-	               12 Bit    Registers := 1     
-	               10 Bit    Registers := 2     
+	               32 Bit    Registers := 55    
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 5     
 	                4 Bit    Registers := 5     
 	                3 Bit    Registers := 7     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 22    
+	                1 Bit    Registers := 20    
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 1     
 	   3 Input   64 Bit        Muxes := 1     
 	  33 Input   32 Bit        Muxes := 2     
-	   2 Input   10 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
 	   3 Input    6 Bit        Muxes := 1     
 	  13 Input    4 Bit        Muxes := 1     
 	   8 Input    4 Bit        Muxes := 2     
@@ -501,11 +380,10 @@ Detailed RTL Component Info :
 	  10 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 2     
-	 416 Input    4 Bit        Muxes := 1     
 	  10 Input    3 Bit        Muxes := 4     
 	  10 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
 	  10 Input    1 Bit        Muxes := 6     
 	  13 Input    1 Bit        Muxes := 1     
 	  16 Input    1 Bit        Muxes := 1     
@@ -513,7 +391,6 @@ Detailed RTL Component Info :
 	   2 Input    1 Bit        Muxes := 38    
 	   7 Input    1 Bit        Muxes := 1     
 	   3 Input    1 Bit        Muxes := 5     
-	 416 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -531,32 +408,27 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design platform has port seg_clrn driven by constant 1
-WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\U11/vga_display/display_data_reg ",trying to implement using LUTRAM
-WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\U11/vga_display/display_data_reg ",trying to implement using LUTRAM
 WARNING: [Synth 8-3332] Sequential element (U1/U1/CPU_MIO_reg) is unused and will be removed from module platform.
-WARNING: [Synth 8-3332] Sequential element (U1/U1/Store_Type_reg[2]) is unused and will be removed from module platform.
-WARNING: [Synth 8-3332] Sequential element (U1/U1/Store_Type_reg[1]) is unused and will be removed from module platform.
-WARNING: [Synth 8-3332] Sequential element (U1/U1/Store_Type_reg[0]) is unused and will be removed from module platform.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -575,37 +447,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module U9 has unconnected pin readn
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -623,8 +495,9 @@ Report BlackBoxes:
 |6     |clk_div        |         1|
 |7     |SAnti_jitter   |         1|
 |8     |Counter_x      |         1|
-|9     |MUX2T1_32_0    |         4|
-|10    |MUX4T1_32_0    |         1|
+|9     |VGA            |         1|
+|10    |MUX2T1_32_0    |         4|
+|11    |MUX4T1_32_0    |         1|
 +------+---------------+----------+
 
 Report Cell Usage: 
@@ -639,39 +512,38 @@ Report Cell Usage:
 |8     |Multi_8CH32_bbox  |     1|
 |9     |SAnti_jitter_bbox |     1|
 |10    |SPIO_bbox         |     1|
-|11    |blk_mem_gen       |     1|
-|12    |clk_div_bbox      |     1|
-|13    |dist_mem_gen      |     1|
-|14    |AND2              |     8|
-|15    |AND3              |    88|
-|16    |AND4              |    72|
-|17    |BUFG              |     2|
-|18    |CARRY4            |    40|
-|19    |INV               |    40|
-|20    |LUT1              |     4|
-|21    |LUT2              |   135|
-|22    |LUT3              |    71|
-|23    |LUT4              |   125|
-|24    |LUT5              |   214|
-|25    |LUT6              |   819|
-|26    |MUXF7             |   299|
-|27    |MUXF8             |    11|
+|11    |VGA_bbox          |     1|
+|12    |blk_mem_gen       |     1|
+|13    |clk_div_bbox      |     1|
+|14    |dist_mem_gen      |     1|
+|15    |AND2              |     8|
+|16    |AND3              |    88|
+|17    |AND4              |    72|
+|18    |BUFG              |     2|
+|19    |CARRY4            |    40|
+|20    |INV               |    40|
+|21    |LUT1              |     5|
+|22    |LUT2              |   144|
+|23    |LUT3              |    81|
+|24    |LUT4              |   111|
+|25    |LUT5              |   228|
+|26    |LUT6              |   990|
+|27    |MUXF7             |   277|
 |28    |OR2               |    56|
 |29    |OR3               |    24|
 |30    |OR4               |    32|
-|31    |FDCE              |  1578|
-|32    |FDRE              |    86|
-|33    |FDSE              |     2|
-|34    |LD                |    24|
-|35    |IBUF              |    22|
-|36    |OBUF              |    27|
+|31    |FDCE              |  1825|
+|32    |FDRE              |    66|
+|33    |LD                |    27|
+|34    |IBUF              |    22|
+|35    |OBUF              |    27|
 +------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1457.363 ; gain = 622.277
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 23 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1411.828 ; gain = 546.727
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1411.828 ; gain = 575.789
+Synthesis finished with 0 errors, 1 critical warnings and 104 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1457.363 ; gain = 514.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1457.363 ; gain = 622.277
 INFO: [Project 1-571] Translating synthesized netlist
 Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
 Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
@@ -685,30 +557,263 @@ Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imp
 Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
 Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf]
 Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1411.828 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 792 Unisim elements for replacement
+Parsing EDIF File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Material/EDIF/VGA.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Material/EDIF/VGA.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1457.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1460 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_alu_res_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_inst_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_is_jal_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_is_jalr_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_ren_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_w_data_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U11/ExMa_mem_wen_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Common 17-14] Message 'Opt 31-32' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Opt 31-36] Removing redundant OBUF, Green_OBUF[2]_inst, from the path connected to top-level port: Green[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Green_OBUF[1]_inst, from the path connected to top-level port: Green[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Green_OBUF[0]_inst, from the path connected to top-level port: Green[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Blue_OBUF[3]_inst, from the path connected to top-level port: Blue[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Blue_OBUF[2]_inst, from the path connected to top-level port: Blue[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Blue_OBUF[1]_inst, from the path connected to top-level port: Blue[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Blue_OBUF[0]_inst, from the path connected to top-level port: Blue[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, HSYNC_OBUF_inst, from the path connected to top-level port: HSYNC 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, VSYNC_OBUF_inst, from the path connected to top-level port: VSYNC 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Red_OBUF[3]_inst, from the path connected to top-level port: Red[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Red_OBUF[2]_inst, from the path connected to top-level port: Red[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Red_OBUF[1]_inst, from the path connected to top-level port: Red[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Red_OBUF[0]_inst, from the path connected to top-level port: Red[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, Green_OBUF[3]_inst, from the path connected to top-level port: Green[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1411.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1457.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 344 instances were transformed.
+  A total of 539 instances were transformed.
   AND2 => LUT2: 8 instances
   AND3 => LUT3: 88 instances
   AND4 => LUT4: 72 instances
   INV => LUT1: 40 instances
-  LD => LDCE: 24 instances
+  LD => LDCE: 27 instances
   OR2 => LUT2: 56 instances
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 64 instances
 
-Synth Design complete, checksum: 4fd47fac
+Synth Design complete, checksum: 757d567
 INFO: [Common 17-83] Releasing license: Synthesis
-140 Infos, 237 Warnings, 3 Critical Warnings and 0 Errors encountered.
+127 Infos, 247 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.828 ; gain = 981.551
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1457.363 ; gain = 1027.434
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/platform.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file platform_utilization_synth.rpt -pb platform_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 00:56:33 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 15:59:13 2023...

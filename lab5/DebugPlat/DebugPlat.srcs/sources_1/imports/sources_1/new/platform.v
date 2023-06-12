@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+`include "Defines.vh"
+
 module platform(
       input clk_100mhz,
       input RSTN,
@@ -42,12 +44,12 @@ module platform(
 
    wire [31:0] clkdiv;
    wire [31:0] counter_out;
-   wire [7:0] point_out;
-   wire [7:0] LE_out;
+   wire [7:0]  point_out;
+   wire [7:0]  LE_out;
    wire [31:0] Disp_num;
-   wire [3:0] BTN_OK;
+   wire [3:0]  BTN_OK;
    wire [15:0] SW_OK;
-   wire [1:0] counter_set;
+   wire [1:0]  counter_set;
    wire [15:0] LED_out;
    wire [31:0] PC;
    wire [31:0] Data_out;
@@ -55,7 +57,7 @@ module platform(
    wire [31:0] ram_data_out;
    wire [31:0] Cpu_data4bus;
    wire [31:0] ram_data_in;
-   wire [9:0] ram_addr;
+   wire [9:0]  ram_addr;
    wire [31:0] Peripheral_in;
    wire [31:0] inst;
    wire [31:0] Reg00;
@@ -98,52 +100,53 @@ module platform(
    wire [31:0] reg_i_data;
    wire        reg_wen;
    wire [3:0]  MemRW;
+   wire [31:0] IfId_pc;
+   wire [31:0] IfId_inst;
+   wire        IfId_valid;
+   wire [31:0] IdEx_pc;
+   wire [31:0] IdEx_inst;
+   wire        IdEx_valid;
+   wire [4:0]  IdEx_rd;
+   wire [4:0]  IdEx_rs1;
+   wire [4:0]  IdEx_rs2;
+   wire [31:0] IdEx_rs1_val;
+   wire [31:0] IdEx_rs2_val;
+   wire        IdEx_reg_wen;
+   wire [2:0]  IdEx_is_imm;
+   wire [31:0] IdEx_imm;
+   wire [3:0]  IdEx_mem_wen;
+   wire [3:0]  IdEx_mem_ren;
+   wire        IdEx_is_branch;
+   wire        IdEx_is_jal;
+   wire        IdEx_is_jalr;
+   wire        IdEx_is_auipc;
+   wire        IdEx_is_lui;
+   wire [3:0]  IdEx_alu_ctrl;
+   wire [2:0]  IdEx_cmp_ctrl;
+   wire [31:0] ExMa_pc;
+   wire [31:0] ExMa_inst;
+   wire        ExMa_valid;
+   wire [4:0]  ExMa_rd;
+   wire        ExMa_reg_wen;
+   wire [31:0] ExMa_mem_w_data;
+   wire [31:0] ExMa_alu_res;
+   wire [3:0]  ExMa_mem_wen;
+   wire [3:0]  ExMa_mem_ren;
+   wire        ExMa_is_jal;
+   wire        ExMa_is_jalr;
+   wire [31:0] MaWb_pc;
+   wire [31:0] MaWb_inst;
+   wire        MaWb_valid;
+   wire [4:0]  MaWb_rd;
+   wire        MaWb_reg_wen;
+   wire        data_ram_we_1;
+   wire [3:0]  data_ram_we;
+   wire [31:0] MaWb_reg_w_data;
 
    assign step = SW_OK[10]|BTN_OK[0];
    assign nClk_CPU = ~Clk_CPU;
    assign nclk_100mhz = ~clk_100mhz;
-
-   wire [31:0] IFPC;
-   wire [31:0] IFinst;
-   wire [31:0] IfId_pc;
-   wire [31:0] IfId_inst;
-   wire IfId_valid;
-   wire [31:0] IdEx_pc;
-   wire [31:0] IdEx_inst;
-   wire IdEx_valid;
-   wire [4:0] IdEx_rd;
-   wire [4:0] IdEx_rs1;
-   wire [4:0] IdEx_rs2;
-   wire [31:0] IdEx_rs1_val;
-   wire [31:0] IdEx_rs2_val;
-   wire IdEx_reg_wen;
-   wire [2:0] IdEx_is_imm;
-   wire [31:0] IdEx_imm;
-   wire [3:0] IdEx_mem_wen;
-   wire [3:0] IdEx_mem_ren;
-   wire IdEx_is_branch;
-   wire IdEx_is_jal;
-   wire IdEx_is_jalr;
-   wire IdEx_is_auipc;
-   wire IdEx_is_lui;
-   wire [3:0] IdEx_alu_ctrl;
-   wire [2:0] IdEx_cmp_ctrl;
-   wire [31:0] ExMa_pc;
-   wire [31:0] ExMa_inst;
-   wire ExMa_valid;
-   wire [4:0] ExMa_rd;
-   wire ExMa_reg_wen;
-   wire [31:0] ExMa_mem_w_data;
-   wire [31:0] ExMa_alu_res;
-   wire [3:0] ExMa_mem_wen;
-   wire [3:0] ExMa_mem_ren;
-   wire ExMa_is_jal;
-   wire ExMa_is_jalr;
-   wire [31:0] MaWb_pc;
-   wire [31:0] MaWb_inst;
-   wire MaWb_valid;
-   wire [4:0] MaWb_rd;
-   wire MaWb_reg_wen;
+   assign data_ram_we = {4{data_ram_we_1}} & MemRW;
 
    SCPU U1(
       .clk(Clk_CPU),
@@ -153,90 +156,13 @@ module platform(
       .Data_in(Cpu_data4bus),
       .CPU_MIO(1'b0),
       .MemRW(MemRW),
-      .PC_out(PC),
-      .Data_out(Data_out),
-      .Addr_out(Addr_out),
-      .IfId_pc_out(IfId_pc),
-      .IfId_inst_out(IfId_inst),
-      .IfId_valid_out(IfId_valid),
-      .IdEx_pc_out(IdEx_pc),
-      .IdEx_inst_out(IdEx_inst),
-      .IdEx_valid_out(IdEx_valid),
-      .IdEx_rd_out(IdEx_rd),
-      .IdEx_rs1_out(IdEx_rs1),
-      .IdEx_rs2_out(IdEx_rs2),
-      .IdEx_rs1_val_out(IdEx_rs1_val),
-      .IdEx_rs2_val_out(IdEx_rs2_val),
-      .IdEx_reg_wen_out(IdEx_reg_wen),
-      .IdEx_is_imm_out(IdEx_is_imm),
-      .IdEx_imm_out(IdEx_imm),
-      .IdEx_mem_wen_out(IdEx_mem_wen),
-      .IdEx_mem_ren_out(IdEx_mem_ren),
-      .IdEx_is_branch_out(IdEx_is_branch),
-      .IdEx_is_jal_out(IdEx_is_jal),
-      .IdEx_is_jalr_out(IdEx_is_jalr),
-      .IdEx_is_auipc_out(IdEx_is_auipc),
-      .IdEx_is_lui_out(IdEx_is_lui),
-      .IdEx_alu_ctrl_out(IdEx_alu_ctrl),
-      .IdEx_cmp_ctrl_out(IdEx_cmp_ctrl),
-      .ExMa_pc_out(ExMa_pc),
-      .ExMa_inst_out(ExMa_inst),
-      .ExMa_valid_out(ExMa_valid),
-      .ExMa_rd_out(ExMa_rd),
-      .ExMa_reg_wen_out(ExMa_reg_wen),
-      .ExMa_mem_w_data_out(ExMa_mem_w_data),
-      .ExMa_alu_res_out(ExMa_alu_res),
-      .ExMa_mem_wen_out(ExMa_mem_wen),
-      .ExMa_mem_ren_out(ExMa_mem_ren),
-      .ExMa_is_jal_out(ExMa_is_jal),
-      .ExMa_is_jalr_out(ExMa_is_jalr),
-      .MaWb_pc_out(MaWb_pc),
-      .MaWb_inst_out(MaWb_inst),
-      .MaWb_valid_out(MaWb_valid),
-      .MaWb_rd_out(MaWb_rd),
-      .MaWb_reg_wen_out(MaWb_reg_wen),
-      .Reg00(Reg00),
-      .Reg01(Reg01),
-      .Reg02(Reg02),
-      .Reg03(Reg03),
-      .Reg04(Reg04),
-      .Reg05(Reg05),
-      .Reg06(Reg06),
-      .Reg07(Reg07),
-      .Reg08(Reg08),
-      .Reg09(Reg09),
-      .Reg10(Reg10),
-      .Reg11(Reg11),
-      .Reg12(Reg12),
-      .Reg13(Reg13),
-      .Reg14(Reg14),
-      .Reg15(Reg15),
-      .Reg16(Reg16),
-      .Reg17(Reg17),
-      .Reg18(Reg18),
-      .Reg19(Reg19),
-      .Reg20(Reg20),
-      .Reg21(Reg21),
-      .Reg22(Reg22),
-      .Reg23(Reg23),
-      .Reg24(Reg24),
-      .Reg25(Reg25),
-      .Reg26(Reg26),
-      .Reg27(Reg27),
-      .Reg28(Reg28),
-      .Reg29(Reg29),
-      .Reg30(Reg30),
-      .Reg31(Reg31)
+      `CPU_DBG_Arguments
    );
 
    dist_mem_gen_0 U2(
       .a(PC[11:2]),
       .spo(inst)
    );
-
-   wire data_ram_we_1;
-   wire [3:0] data_ram_we;
-   assign data_ram_we = {4{data_ram_we_1}} & MemRW;
 
    blk_mem_gen_0 U3(
       .clka(nclk_100mhz),
@@ -357,82 +283,9 @@ module platform(
 
 
    VGA U11(
-      .clk_25m(clkdiv[1]),
-      .clk_100m(clk_100mhz),
+      `VGA_DBG_Core_Arguments
       .rst(rst),
-      .IFPC(),
-      .IFinst(),
-      .IfId_pc(IfId_pc),
-      .IfId_inst(IfId_inst),
-      .IfId_valid(IfId_valid),
-      .IdEx_pc(IdEx_pc),
-      .IdEx_inst(IdEx_inst),
-      .IdEx_valid(IdEx_valid),
-      .IdEx_rd(IdEx_rd),
-      .IdEx_rs1(IdEx_rs1),
-      .IdEx_rs2(IdEx_rs2),
-      .IdEx_rs1_val(IdEx_rs1_val),
-      .IdEx_rs2_val(IdEx_rs2_val),
-      .IdEx_reg_wen(IdEx_reg_wen),
-      .IdEx_is_imm(IdEx_is_imm),
-      .IdEx_imm(IdEx_imm),
-      .IdEx_mem_wen(IdEx_mem_wen),
-      .IdEx_mem_ren(IdEx_mem_ren),
-      .IdEx_is_branch(IdEx_is_branch),
-      .IdEx_is_jal(IdEx_is_jal),
-      .IdEx_is_jalr(IdEx_is_jalr),
-      .IdEx_is_auipc(IdEx_is_auipc),
-      .IdEx_is_lui(IdEx_is_lui),
-      .IdEx_alu_ctrl(IdEx_alu_ctrl),
-      .IdEx_cmp_ctrl(IdEx_cmp_ctrl),
-      .ExMa_pc(ExMa_pc),
-      .ExMa_inst(ExMa_inst),
-      .ExMa_valid(ExMa_valid),
-      .ExMa_rd(ExMa_rd),
-      .ExMa_reg_wen(ExMa_reg_wen),
-      .ExMa_mem_w_data(ExMa_mem_w_data),
-      .ExMa_alu_res(ExMa_alu_res),
-      .ExMa_mem_wen(ExMa_mem_wen),
-      .ExMa_mem_ren(ExMa_mem_ren),
-      .ExMa_is_jal(ExMa_is_jal),
-      .ExMa_is_jalr(ExMa_is_jalr),
-      .MaWb_pc(MaWb_pc),
-      .MaWb_inst(MaWb_inst),
-      .MaWb_valid(MaWb_valid),
-      .MaWb_rd(MaWb_rd),
-      .MaWb_reg_wen(MaWb_reg_wen),
-      .x0(Reg00),
-      .ra(Reg01),
-      .sp(Reg02),
-      .gp(Reg03),
-      .tp(Reg04),
-      .t0(Reg05),
-      .t1(Reg06),
-      .t2(Reg07),
-      .s0(Reg08),
-      .s1(Reg09),
-      .a0(Reg10),
-      .a1(Reg11),
-      .a2(Reg12),
-      .a3(Reg13),
-      .a4(Reg14),
-      .a5(Reg15),
-      .a6(Reg16),
-      .a7(Reg17),
-      .s2(Reg18),
-      .s3(Reg19),
-      .s4(Reg20),
-      .s5(Reg21),
-      .s6(Reg22),
-      .s7(Reg23),
-      .s8(Reg24),
-      .s9(Reg25),
-      .s10(Reg26),
-      .s11(Reg27),
-      .t3(Reg28),
-      .t4(Reg29),
-      .t5(Reg30),
-      .t6(Reg31),
+      .clk_div(clkdiv),
       .hs(HSYNC),
       .vs(VSYNC),
       .vga_r(Red[3:0]),

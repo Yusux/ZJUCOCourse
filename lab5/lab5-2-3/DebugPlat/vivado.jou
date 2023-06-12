@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun 12 15:15:46 2023
+# Process ID: 15928
+# Current directory: D:/Project/Vivado/lab5/lab5-2-3/DebugPlat
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1092 D:\Project\Vivado\lab5\lab5-2-3\DebugPlat\DebugPlat.xpr
+# Log file: D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/vivado.log
+# Journal file: D:/Project/Vivado/lab5/lab5-2-3/DebugPlat\vivado.jou
+# Running On: yusux, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 33719 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.xpr
+update_compile_order -fileset sources_1
+set_property CONFIG.coefficient_file {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/IMem copy.coe} [get_ips dist_mem_gen_0]
+generate_target all [get_files  D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+catch { [ delete_ip_run [get_ips -all dist_mem_gen_0] ] }
+export_ip_user_files -of_objects [get_files D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci]
+export_simulation -of_objects [get_files D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci] -directory D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.ip_user_files/sim_scripts -ip_user_files_dir D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.ip_user_files -ipstatic_source_dir D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.cache/compile_simlib/modelsim} {questa=D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.cache/compile_simlib/questa} {riviera=D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.cache/compile_simlib/riviera} {activehdl=D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/impl_1/platform.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/impl_1/platform.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/impl_1/platform.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/impl_1/platform.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/impl_1/platform.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager

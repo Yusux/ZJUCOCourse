@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -94,8 +96,11 @@ OPTRACE "Adding files" START { }
 add_files D:/Project/Vivado/lab5/DebugPlat/IMem.coe
 add_files D:/Project/Vivado/lab5/DebugPlat/DMem.coe
 add_files D:/Project/Vivado/lab5/DebugPlat/IMem_4_3.coe
-add_files {{d:/Project/Vivado/lab5/DebugPlat/IMem copy.coe}}
-read_verilog D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/lab4/Lab4_header.vh
+add_files {{D:/Project/Vivado/lab5/DebugPlat/IMem copy.coe}}
+read_verilog {
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/lab4/Lab4_header.vh
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Material/Defines.vh
+}
 read_mem {
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/platform/vga_debugger.mem
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/platform/font_8x16.mem
@@ -105,8 +110,10 @@ read_verilog -library xil_defaultlib {
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Branch_Checker.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Forwarding_unit.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Loadstore_forwarding.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MC14495_ZJU.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MUX2T1_64.v
@@ -121,23 +128,22 @@ read_verilog -library xil_defaultlib {
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SPIO.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg7_Dev.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg_map.v
-  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v
-  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaController.v
-  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v
-  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Stall_unit.v
+  D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/EDIF/VGA_stub.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.v
   D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v
 }
+read_ip -quiet D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+
 read_ip -quiet D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci
 
 read_ip -quiet D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci
 
-read_ip -quiet D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-
 read_ip -quiet D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_ooc.xdc]
 
+read_edif D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Material/EDIF/VGA.edf
 read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf
 read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf
 read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.edf
@@ -156,6 +162,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc
 set_property used_in_implementation false [get_files D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/utils_1/imports/synth_1/platform.dcp

@@ -1,0 +1,648 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun 12 15:20:40 2023
+# Process ID: 35520
+# Current directory: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1
+# Command line: vivado.exe -log platform.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source platform.tcl
+# Log file: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/platform.vds
+# Journal file: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1\vivado.jou
+# Running On: yusux, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 33719 MB
+#-----------------------------------------------------------
+source platform.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Vivado/lab2/OExp02-IP2SOC/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Vivado/lab0/OExo01-Element/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:VGA:1.0'. The one found in IP location 'd:/Project/Vivado/lab2/OExp02-IP2SOC/IP/Supplementary/VGA' will take precedence over the same IP in location d:/Project/Vivado/lab2/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new
+Command: read_checkpoint -auto_incremental -incremental D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/utils_1/imports/synth_1/platform.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/utils_1/imports/synth_1/platform.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top platform -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10384
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'c', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'd', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'e', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'f', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'g', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'p', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'step', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:144]
+INFO: [Synth 8-11241] undeclared symbol 'nClk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:145]
+INFO: [Synth 8-11241] undeclared symbol 'nclk_100mhz', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:146]
+INFO: [Synth 8-11241] undeclared symbol 'Clk_CPU', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:150]
+INFO: [Synth 8-11241] undeclared symbol 'rst', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:151]
+INFO: [Synth 8-11241] undeclared symbol 'counter0_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:258]
+INFO: [Synth 8-11241] undeclared symbol 'counter1_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:259]
+INFO: [Synth 8-11241] undeclared symbol 'counter2_OUT', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:260]
+INFO: [Synth 8-11241] undeclared symbol 'GPIOf0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:265]
+INFO: [Synth 8-11241] undeclared symbol 'GPIOe0000000_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:266]
+INFO: [Synth 8-11241] undeclared symbol 'counter_we', assumed default net type 'wire' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:267]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.402 ; gain = 410.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'platform' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'SCPU_ctrl' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:33]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:217]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU_ctrl' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:33]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-1_2/lab4-1_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/MUX2T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/MUX2T1_32_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Stall_unit' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Stall_unit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Stall_unit' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Stall_unit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab1/RegFile/RegFile.srcs/sources_1/new/Regs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding_unit' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Forwarding_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding_unit' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Forwarding_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ALU.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/ALU.v:34]
+INFO: [Synth 8-6157] synthesizing module 'MemDataModer' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/MemDataModer.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'MemDataModer' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/MemDataModer.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Loadstore_forwarding' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Loadstore_forwarding.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Loadstore_forwarding' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Loadstore_forwarding.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Branch_Checker' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Branch_Checker.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Branch_Checker' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/new/Branch_Checker.v:24]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/MUX4T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/MUX4T1_32_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/DataPath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/lab4/lab4-0/lab4-0.srcs/sources_1/new/SCPU.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:155]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/.Xil/Vivado-35520-yusux/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Multi_8CH32.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SSeg7_Dev' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg7_Dev.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_64' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MUX2T1_64.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_64' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MUX2T1_64.v:23]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/P2S.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/P2S.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/P2S.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:43]
+INFO: [Synth 8-6157] synthesizing module 'MC14495_ZJU' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MC14495_ZJU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'INV' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75824]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75824]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:569]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:569]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94593]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94593]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:521]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:521]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94545]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94545]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:473]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94499]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (0#1) [D:/Software/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94499]
+INFO: [Synth 8-6155] done synthesizing module 'MC14495_ZJU' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/MC14495_ZJU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/HexTo8SEG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SSeg_map' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg_map' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg7_Dev' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/SSeg7_Dev.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SPIO.v:15]
+WARNING: [Synth 8-7071] port 'GPIOf0' of module 'SPIO' is unconnected for instance 'U7' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:306]
+WARNING: [Synth 8-7023] instance 'U7' of module 'SPIO' has 12 connections declared, but only 11 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:306]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SAnti_jitter' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.v:15]
+WARNING: [Synth 8-7071] port 'readn' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+WARNING: [Synth 8-7071] port 'Key_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+WARNING: [Synth 8-7071] port 'Key_ready' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+WARNING: [Synth 8-7071] port 'pulse_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+WARNING: [Synth 8-7071] port 'CR' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+WARNING: [Synth 8-7023] instance 'U9' of module 'SAnti_jitter' has 13 connections declared, but only 8 given [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:330]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.v:15]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VgaController' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaController.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VgaController' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaController.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDisplay' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:1]
+INFO: [Synth 8-3876] $readmem data file 'vga_debugger.mem' is read successfully [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:15]
+INFO: [Synth 8-3876] $readmem data file 'font_8x16.mem' is read successfully [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDisplay' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDisplay.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDebugger' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Ascii' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Ascii' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDebugger' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VgaDebugger.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/VGA.v:2]
+WARNING: [Synth 8-689] width (4) of port connection 'IdEx_mem_wen' does not match port width (1) of module 'VGA' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:377]
+INFO: [Synth 8-6155] done synthesizing module 'platform' (0#1) [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/new/platform.v:22]
+WARNING: [Synth 8-7137] Register buffer_reg in module P2S has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/new/P2S.v:51]
+WARNING: [Synth 8-7129] Port Disp_num[63] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[62] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[61] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[60] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[59] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[58] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[57] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[56] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[55] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[54] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[53] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[52] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[51] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[50] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[49] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[48] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[47] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[46] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[45] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[44] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[43] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[42] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[41] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[40] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[39] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[38] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[37] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[36] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[35] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[34] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[33] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Disp_num[32] in module SSeg_map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[31] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[30] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[29] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[28] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[27] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[26] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[25] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[19] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[18] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[17] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[16] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[15] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[14] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[13] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[12] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[11] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[10] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[9] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[8] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ExMa_inst[7] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[31] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[30] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[29] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[28] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[27] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[26] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[25] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[24] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[23] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[22] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[21] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[20] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[19] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[18] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[17] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[16] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[15] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[14] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[13] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaWb_inst[12] in module Loadstore_forwarding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[0] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[31] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[30] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[29] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[28] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[27] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[26] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[25] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[19] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[18] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[17] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[16] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[15] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[14] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[13] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[12] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[11] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[10] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[9] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[8] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IfId_inst[7] in module Stall_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IdEx_inst[31] in module Stall_unit is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.828 ; gain = 524.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.828 ; gain = 524.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.828 ; gain = 524.879
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1366.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'U3'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U0'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U0'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U1'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U1'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U2'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U2'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U3'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0/MUX2T1_32_0_in_context.xdc] for cell 'U1/U2/MUX2T1_32_0_U3'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0/MUX4T1_32_0_in_context.xdc] for cell 'U1/U2/MUX4T1_32_0_U'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0/MUX4T1_32_0_in_context.xdc] for cell 'U1/U2/MUX4T1_32_0_U'
+Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U2'
+Finished Parsing XDC File [d:/Project/Vivado/lab5/DebugPlat/DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U2'
+Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
+Finished Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/constrs_1/imports/new/platform.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/platform_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/platform_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1471.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1471.660 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Software/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX2T1_32_0_U3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U1/U2/MUX4T1_32_0_U. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'P2S'
+WARNING: [Synth 8-327] inferring latch for variable 'ImmSel_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_B_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'Jalr_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRW_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Control_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'CPU_MIO_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'Mem_Type_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'Store_Type_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:84]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_Type_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'LuiAuipc_reg' [D:/Project/Vivado/lab5/DebugPlat/DebugPlat.srcs/sources_1/imports/sources_1/imports/new/SCPU_ctrl.v:86]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                  S_TRAN |                               01 |                               01
+                  S_DONE |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'P2S'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 55    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	  33 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 2     
+	   7 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	 416 Input    4 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 4     
+	  10 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 6     
+	  13 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 39    
+	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+	   8 Input    1 Bit        Muxes := 1     
+	 416 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design platform has port seg_clrn driven by constant 1
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "platform/U11/vga_display/display_data_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "platform/U11/vga_display/display_data_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-3332] Sequential element (U1/U1/CPU_MIO_reg) is unused and will be removed from module platform.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|VgaDisplay  | fonts_data | 4096x8        | LUT            | 
+|platform    | p_0_out    | 4096x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------+-----------+----------------------+---------------+
+|platform    | U11/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192  | 
++------------+----------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------+-----------+----------------------+---------------+
+|platform    | U11/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192  | 
++------------+----------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U9 has unconnected pin readn
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |blk_mem_gen_0  |         1|
+|3     |MIO_BUS        |         1|
+|4     |Multi_8CH32    |         1|
+|5     |SPIO           |         1|
+|6     |clk_div        |         1|
+|7     |SAnti_jitter   |         1|
+|8     |Counter_x      |         1|
+|9     |MUX2T1_32_0    |         4|
+|10    |MUX4T1_32_0    |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |Counter_x_bbox    |     1|
+|2     |MIO_BUS_bbox      |     1|
+|3     |MUX2T1_32         |     1|
+|4     |MUX2T1_32_0       |     3|
+|7     |MUX4T1_32         |     1|
+|8     |Multi_8CH32_bbox  |     1|
+|9     |SAnti_jitter_bbox |     1|
+|10    |SPIO_bbox         |     1|
+|11    |blk_mem_gen       |     1|
+|12    |clk_div_bbox      |     1|
+|13    |dist_mem_gen      |     1|
+|14    |AND2              |     8|
+|15    |AND3              |    88|
+|16    |AND4              |    72|
+|17    |BUFG              |     2|
+|18    |CARRY4            |    51|
+|19    |INV               |    40|
+|20    |LUT1              |     9|
+|21    |LUT2              |   201|
+|22    |LUT3              |   107|
+|23    |LUT4              |   182|
+|24    |LUT5              |   445|
+|25    |LUT6              |  2278|
+|26    |MUXF7             |   586|
+|27    |MUXF8             |   121|
+|28    |OR2               |    56|
+|29    |OR3               |    24|
+|30    |OR4               |    32|
+|31    |RAM64M            |   128|
+|32    |RAM64X1D          |    62|
+|33    |FDCE              |  1827|
+|34    |FDRE              |    99|
+|35    |FDSE              |     2|
+|36    |LD                |    27|
+|37    |IBUF              |    22|
+|38    |OBUF              |    27|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1471.660 ; gain = 524.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1471.660 ; gain = 636.711
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SPIO.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SPIO.edf]
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.edf]
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
+Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf]
+Finished Parsing EDIF File [D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1471.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1393 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1471.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 537 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  LD => LDCE: 27 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 62 instances
+
+Synth Design complete, checksum: 43ed215b
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 131 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1471.660 ; gain = 1040.711
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/synth_1/platform.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file platform_utilization_synth.rpt -pb platform_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 15:21:39 2023...
