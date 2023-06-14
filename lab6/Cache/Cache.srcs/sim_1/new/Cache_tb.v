@@ -134,7 +134,7 @@ module Cache_tb(
       addr_in = 32'h0000012F; // hit
       data_in = 32'h00000000;
       #800
-      // phase 4: write with same index whrn hit
+      // phase 4: write with same index when hit
       read_enable = 4'b0000;
       write_enable = 4'b1111;
       addr_in = 32'h00000000; // hit
