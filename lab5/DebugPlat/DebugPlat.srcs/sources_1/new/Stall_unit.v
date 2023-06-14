@@ -40,7 +40,6 @@ module Stall_unit(
    assign IdEx_inst_rd     = IdEx_inst[11:7];
 
    assign stall = (IfId_valid && IdEx_valid && (IdEx_inst_opcode == 7'b0000011) && 
-                   (IfId_inst_rs1 == IdEx_inst_rd || IfId_inst_rs2 == IdEx_inst_rd) &&
                    (~(IfId_inst_opcode == 7'b0100011 && IfId_inst_rs2 == IdEx_inst_rd))) ? 1'b1 : 1'b0; 
 
 endmodule

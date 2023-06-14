@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Jun 13 11:36:38 2023
-# Process ID: 17380
+# Start of session at: Wed Jun 14 13:37:24 2023
+# Process ID: 25516
 # Current directory: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/impl_1
 # Command line: vivado.exe -log platform.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source platform.tcl -notrace
 # Log file: D:/Project/Vivado/lab5/DebugPlat/DebugPlat.runs/impl_1/platform.vdi
