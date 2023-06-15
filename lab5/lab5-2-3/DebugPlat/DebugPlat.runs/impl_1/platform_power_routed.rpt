@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Mon Jun 12 15:25:58 2023
+| Date             : Thu Jun 15 12:54:58 2023
 | Host             : yusux running 64-bit major release  (build 9200)
 | Command          : report_power -file platform_power_routed.rpt -pb platform_power_summary_routed.pb -rpx platform_power_routed.rpx
 | Design           : platform
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 47.917 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 39.620 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 46.274                           |
-| Device Static (W)        | 1.643                            |
+| Dynamic (W)              | 38.606                           |
+| Device Static (W)        | 1.013                            |
 | Effective TJA (C/W)      | 1.9                              |
-| Max Ambient (C)          | 7.8                              |
-| Junction Temperature (C) | 117.2                            |
+| Max Ambient (C)          | 23.7                             |
+| Junction Temperature (C) | 101.3                            |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |    12.686 |     8362 |       --- |             --- |
-|   LUT as Logic           |    11.502 |     4110 |    101400 |            4.05 |
-|   CARRY4                 |     0.399 |      101 |     25350 |            0.40 |
-|   Register               |     0.378 |     2354 |    202800 |            1.16 |
-|   LUT as Shift Register  |     0.164 |       16 |     35000 |            0.05 |
-|   F7/F8 Muxes            |     0.122 |      862 |    101400 |            0.85 |
-|   LUT as Distributed RAM |     0.074 |      616 |     35000 |            1.76 |
-|   BUFG                   |     0.047 |        6 |        32 |           18.75 |
+| Slice Logic              |     9.320 |     8235 |       --- |             --- |
+|   LUT as Logic           |     8.317 |     3999 |    101400 |            3.94 |
+|   CARRY4                 |     0.350 |      101 |     25350 |            0.40 |
+|   Register               |     0.329 |     2348 |    202800 |            1.16 |
+|   LUT as Shift Register  |     0.151 |       16 |     35000 |            0.05 |
+|   F7/F8 Muxes            |     0.079 |      856 |    101400 |            0.84 |
+|   LUT as Distributed RAM |     0.051 |      616 |     35000 |            1.76 |
+|   BUFG                   |     0.044 |        6 |        32 |           18.75 |
 |   Others                 |     0.000 |       30 |       --- |             --- |
-| Signals                  |    19.938 |     5956 |       --- |             --- |
+| Signals                  |    15.684 |     5838 |       --- |             --- |
 | Block RAM                |     0.129 |        1 |       325 |            0.31 |
-| I/O                      |    13.522 |       49 |       400 |           12.25 |
-| Static Power             |     1.643 |          |           |                 |
-| Total                    |    47.917 |          |           |                 |
+| I/O                      |    13.474 |       49 |       400 |           12.25 |
+| Static Power             |     1.013 |          |           |                 |
+| Total                    |    39.620 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    34.224 |      32.831 |      1.393 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.633 |       0.544 |      0.088 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.454 |       3.453 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    26.048 |      25.211 |      0.838 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.602 |       0.543 |      0.059 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.441 |       3.440 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.573 |       0.572 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.020 |       0.019 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.058 |       0.010 |      0.048 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.037 |       0.010 |      0.027 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,111 +143,72 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| platform                             |    46.274 |
-|   U1                                 |     9.737 |
-|     U1                               |     0.019 |
-|     U2                               |     9.718 |
-|       ALU_U                          |     0.397 |
-|       MUX2T1_32_0_U0                 |     0.233 |
-|       MUX2T1_32_0_U1                 |     0.128 |
-|       MUX2T1_32_0_U2                 |     0.051 |
-|       MUX2T1_32_0_U3                 |     0.085 |
-|       MUX4T1_32_0_U                  |     0.704 |
-|       MemDataModer_U0                |     0.323 |
-|       PC_U                           |     2.009 |
-|       Regs_U                         |     1.566 |
-|   U10                                |     1.723 |
-|   U11                                |    14.421 |
-|     vga_controller                   |     2.221 |
-|     vga_debugger                     |    11.490 |
-|     vga_display                      |     0.710 |
+| platform                             |    38.606 |
+|   U1                                 |     5.965 |
+|     U1                               |     0.007 |
+|     U2                               |     5.958 |
+|       ALU_U                          |     0.051 |
+|       MUX2T1_32_0_U0                 |     0.180 |
+|       MUX2T1_32_0_U1                 |     0.131 |
+|       MUX2T1_32_0_U2                 |     0.007 |
+|       MUX2T1_32_0_U3                 |     0.100 |
+|       MUX4T1_32_0_U                  |     0.225 |
+|       MemDataModer_U0                |     0.265 |
+|       PC_U                           |     1.096 |
+|       Regs_U                         |     0.995 |
+|   U10                                |     1.757 |
+|   U11                                |    13.042 |
+|     vga_controller                   |     2.054 |
+|     vga_debugger                     |    10.424 |
+|     vga_display                      |     0.565 |
 |       display_data_reg_0_63_0_2      |     0.001 |
-|       display_data_reg_1024_1087_0_2 |     0.001 |
-|       display_data_reg_1088_1151_0_2 |     0.002 |
-|       display_data_reg_1152_1215_0_2 |     0.001 |
 |       display_data_reg_1216_1279_0_2 |     0.001 |
 |       display_data_reg_1280_1343_0_2 |     0.001 |
-|       display_data_reg_128_191_0_2   |     0.002 |
-|       display_data_reg_1344_1407_0_2 |     0.002 |
-|       display_data_reg_1408_1471_0_2 |     0.002 |
 |       display_data_reg_1472_1535_0_2 |     0.001 |
-|       display_data_reg_1536_1599_0_2 |     0.001 |
 |       display_data_reg_1600_1663_0_2 |     0.001 |
 |       display_data_reg_1664_1727_0_2 |     0.001 |
-|       display_data_reg_1728_1791_0_2 |     0.001 |
 |       display_data_reg_1792_1855_0_2 |     0.001 |
-|       display_data_reg_1856_1919_0_2 |     0.001 |
-|       display_data_reg_1920_1983_0_2 |     0.002 |
 |       display_data_reg_192_255_0_2   |     0.001 |
-|       display_data_reg_1984_2047_0_2 |     0.001 |
 |       display_data_reg_2048_2111_0_2 |     0.001 |
-|       display_data_reg_2112_2175_0_2 |     0.001 |
 |       display_data_reg_2176_2239_0_2 |     0.001 |
-|       display_data_reg_2240_2303_0_2 |     0.001 |
-|       display_data_reg_2304_2367_0_2 |     0.001 |
-|       display_data_reg_2368_2431_0_2 |     0.001 |
-|       display_data_reg_2432_2495_0_2 |     0.001 |
 |       display_data_reg_2496_2559_0_2 |     0.001 |
-|       display_data_reg_2560_2623_0_2 |     0.001 |
-|       display_data_reg_256_319_0_2   |     0.001 |
-|       display_data_reg_2624_2687_0_2 |     0.002 |
 |       display_data_reg_2688_2751_0_2 |     0.001 |
 |       display_data_reg_2752_2815_0_2 |     0.001 |
 |       display_data_reg_2816_2879_0_2 |     0.001 |
-|       display_data_reg_2880_2943_0_2 |     0.001 |
 |       display_data_reg_2944_3007_0_2 |     0.001 |
 |       display_data_reg_3008_3071_0_2 |     0.001 |
-|       display_data_reg_3072_3135_0_2 |     0.001 |
-|       display_data_reg_3136_3199_0_2 |     0.001 |
 |       display_data_reg_3200_3263_0_2 |     0.001 |
-|       display_data_reg_320_383_0_2   |     0.001 |
-|       display_data_reg_3264_3327_0_2 |     0.001 |
-|       display_data_reg_3328_3391_0_2 |     0.001 |
-|       display_data_reg_3392_3455_0_2 |     0.001 |
-|       display_data_reg_3456_3519_0_2 |     0.001 |
-|       display_data_reg_3520_3583_0_2 |     0.002 |
-|       display_data_reg_3584_3647_0_2 |     0.002 |
-|       display_data_reg_3648_3711_0_2 |     0.002 |
-|       display_data_reg_3712_3775_0_2 |     0.001 |
-|       display_data_reg_3776_3839_0_2 |     0.001 |
-|       display_data_reg_3840_3903_0_2 |     0.002 |
-|       display_data_reg_384_447_0_2   |     0.001 |
+|       display_data_reg_3648_3711_0_2 |     0.001 |
+|       display_data_reg_3840_3903_0_2 |     0.001 |
 |       display_data_reg_3904_3967_0_2 |     0.001 |
-|       display_data_reg_3968_4031_0_2 |     0.001 |
-|       display_data_reg_4032_4095_0_2 |     0.001 |
-|       display_data_reg_448_511_0_2   |     0.002 |
-|       display_data_reg_512_575_0_2   |     0.002 |
+|       display_data_reg_512_575_0_2   |     0.001 |
 |       display_data_reg_576_639_0_2   |     0.001 |
-|       display_data_reg_640_703_0_2   |     0.001 |
-|       display_data_reg_64_127_0_2    |     0.001 |
 |       display_data_reg_704_767_0_2   |     0.001 |
-|       display_data_reg_768_831_0_2   |     0.001 |
 |       display_data_reg_832_895_0_2   |     0.001 |
 |       display_data_reg_896_959_0_2   |     0.001 |
-|       display_data_reg_960_1023_0_2  |     0.002 |
-|   U2                                 |     2.474 |
-|     U0                               |     2.474 |
-|       synth_options.dist_mem_inst    |     2.474 |
-|   U3                                 |     0.298 |
-|     U0                               |     0.298 |
-|       inst_blk_mem_gen               |     0.298 |
-|   U4                                 |     0.668 |
-|   U5                                 |     0.887 |
-|   U6                                 |     1.554 |
-|     M2                               |     0.402 |
-|     SM1                              |     1.152 |
-|       HTS0                           |     0.113 |
-|       HTS1                           |     0.137 |
-|       HTS2                           |     0.141 |
-|       HTS3                           |     0.132 |
-|       HTS4                           |     0.142 |
-|       HTS5                           |     0.155 |
-|       HTS6                           |     0.170 |
-|       HTS7                           |     0.163 |
-|   U7                                 |     0.157 |
-|     LED_P2S                          |     0.157 |
-|   U8                                 |     0.375 |
-|   U9                                 |     0.120 |
+|   U2                                 |     0.807 |
+|     U0                               |     0.807 |
+|       synth_options.dist_mem_inst    |     0.807 |
+|   U3                                 |     0.254 |
+|     U0                               |     0.254 |
+|       inst_blk_mem_gen               |     0.254 |
+|   U4                                 |     0.398 |
+|   U5                                 |     0.687 |
+|   U6                                 |     1.261 |
+|     M2                               |     0.370 |
+|     SM1                              |     0.891 |
+|       HTS0                           |     0.088 |
+|       HTS1                           |     0.095 |
+|       HTS2                           |     0.103 |
+|       HTS3                           |     0.109 |
+|       HTS4                           |     0.104 |
+|       HTS5                           |     0.102 |
+|       HTS6                           |     0.149 |
+|       HTS7                           |     0.140 |
+|   U7                                 |     0.155 |
+|     LED_P2S                          |     0.155 |
+|   U8                                 |     0.348 |
+|   U9                                 |     0.117 |
 +--------------------------------------+-----------+
 
 

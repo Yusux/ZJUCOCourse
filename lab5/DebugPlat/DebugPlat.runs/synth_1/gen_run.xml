@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1686720988" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/platform.dcp">
   <File Type="PA-TCL" Name="platform.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="platform_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="platform_reports.tcl"/>
   <File Type="RDS-RDS" Name="platform.vds"/>
   <File Type="RDS-UTIL" Name="platform_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="platform_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="platform.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="platform_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="platform_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Material/EDIF/VGA.edf">
@@ -454,6 +451,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="MUX2T1_32_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MUX4T1_32_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
 </GenRun>

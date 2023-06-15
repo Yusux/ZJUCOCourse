@@ -123,7 +123,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7k160tffg676-2L
   set_property design_mode GateLvl [current_fileset]
@@ -144,9 +143,9 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.runs/synth_1/platform.dcp
   read_ip -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
   read_ip -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci
   read_ip -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci
+  read_ip -quiet D:/Project/Vivado/lab5/lab5-2-3/DebugPlat/DebugPlat.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
   read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/Counter_x.edf
   read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf
   read_edif D:/Project/Vivado/lab4/DebugPlat/DebugPlat.srcs/sources_1/imports/Supplementary/clk_div.edf

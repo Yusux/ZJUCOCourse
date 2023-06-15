@@ -209,7 +209,7 @@ module DataPath(
    reg [1:0]   MaWb_mem_2_reg;
    reg [31:0]  MaWb_data_in;
 
-   assign jump_inv = ~(MAJump_Contorl & ExMa_is_jalr);
+   assign jump_inv = ~((MAJump_Contorl | ExMa_is_jalr) & ExMa_valid);
 
    assign IfId_pc_out = IfId_pc;
    assign IfId_inst_out = IfId_inst;

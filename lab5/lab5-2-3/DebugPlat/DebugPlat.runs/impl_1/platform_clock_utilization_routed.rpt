@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date              : Mon Jun 12 15:25:59 2023
+| Date              : Thu Jun 15 12:54:59 2023
 | Host              : yusux running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file platform_clock_utilization_routed.rpt
 | Design            : platform
@@ -54,7 +54,7 @@ Table of Contents
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                    | Net                  |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------+-------------------------------+----------------------+
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 1 |        1221 |               0 |              |       | nClk_CPU_BUFG_inst/O          | nClk_CPU_BUFG        |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |         765 |               1 |              |       | U8/Clk_CPU_BUFG_inst/O        | U8/Clk_CPU_BUFG      |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |         759 |               1 |              |       | U8/Clk_CPU_BUFG_inst/O        | U8/Clk_CPU_BUFG      |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 3 |         415 |               0 |              |       | clk_100mhz_IBUF_BUFG_inst/O   | clk_100mhz_IBUF_BUFG |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 1 |          35 |               3 |              |       | U8/clkdiv[11]_BUFG_inst/O     | U8/clkdiv_BUFG[11]   |
 | g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 1 |          35 |               3 |              |       | U8/clkdiv_BUFG[6]_BUFG_inst/O | U8/clkdiv_BUFG[6]    |
@@ -71,11 +71,11 @@ Table of Contents
 | Source Id | Global Id | Driver Type/Pin | Constraint | Site          | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin               | Net             |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------+-----------------+
 | src0      | g0        | LUT1/O          | None       | SLICE_X56Y146 | X1Y2         |           1 |               0 |                     |              | nClk_CPU_BUFG_inst_i_1/O | nClk_CPU        |
-| src1      | g1        | LUT5/O          | None       | SLICE_X97Y109 | X1Y2         |           1 |               0 |                     |              | U8/Clk_CPU_INST_0/O      | U8/Clk_CPU      |
+| src1      | g1        | LUT5/O          | None       | SLICE_X97Y107 | X1Y2         |           1 |               0 |                     |              | U8/Clk_CPU_INST_0/O      | U8/Clk_CPU      |
 | src2      | g2        | IBUF/O          | IOB_X1Y24  | IOB_X1Y24     | X1Y0         |           1 |               0 |                     |              | clk_100mhz_IBUF_inst/O   | clk_100mhz_IBUF |
-| src3      | g3        | FDCE/Q          | None       | SLICE_X96Y108 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[11]/Q      | U8/clkdiv[11]   |
-| src4      | g4        | FDCE/Q          | None       | SLICE_X96Y107 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[6]/Q       | U8/clkdiv[6]    |
-| src5      | g5        | FDCE/Q          | None       | SLICE_X96Y108 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[9]/Q       | U8/clkdiv[9]    |
+| src3      | g3        | FDCE/Q          | None       | SLICE_X96Y107 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[11]/Q      | U8/clkdiv[11]   |
+| src4      | g4        | FDCE/Q          | None       | SLICE_X96Y106 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[6]/Q       | U8/clkdiv[6]    |
+| src5      | g5        | FDCE/Q          | None       | SLICE_X96Y107 | X1Y2         |           1 |               0 |                     |              | U8/clkdiv_reg[9]/Q       | U8/clkdiv[9]    |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------+-----------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -87,7 +87,7 @@ Table of Contents
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------+-------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL          | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin         | Net               |
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------+-------------------+
-| 0        | FDCE/Q          | None       | SLICE_X96Y106/BFF | X1Y2         |          22 |               3 |              |       | U8/clkdiv_reg[1]/Q | U8/clkdiv_BUFG[1] |
+| 0        | FDCE/Q          | None       | SLICE_X96Y105/BFF | X1Y2         |          22 |               3 |              |       | U8/clkdiv_reg[1]/Q | U8/clkdiv_BUFG[1] |
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------+-------------------+
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
@@ -103,11 +103,11 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2800 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   70 |  2700 |    3 |   950 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   70 |  2700 |    2 |   950 |    0 |    80 |    0 |    40 |    0 |    60 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2800 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   45 |  2700 |    7 |   950 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   43 |  2700 |    4 |   950 |    0 |    80 |    0 |    40 |    0 |    60 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2200 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2212 |  2700 |  744 |   950 |    0 |    80 |    1 |    40 |    0 |    60 |
+| X1Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2208 |  2700 |  756 |   950 |    0 |    80 |    1 |    40 |    0 |    60 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2200 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    60 |
 | X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  2150 |    0 |   800 |    0 |    50 |    0 |    25 |    0 |    60 |
 | X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2800 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    60 |
@@ -162,7 +162,7 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net             |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------+
-| g1        | BUFG/O          | n/a               |       |             |               |         766 |        0 |              0 |        0 | U8/Clk_CPU_BUFG |
+| g1        | BUFG/O          | n/a               |       |             |               |         760 |        0 |              0 |        0 | U8/Clk_CPU_BUFG |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -175,7 +175,7 @@ All Modules
 +----+----+------+-----------------------+
 | Y4 |  0 |    0 |                     - |
 | Y3 |  0 |    0 |                     - |
-| Y2 |  0 |  766 |                     0 |
+| Y2 |  0 |  760 |                     0 |
 | Y1 |  0 |    0 |                     - |
 | Y0 |  0 |    0 |                     - |
 +----+----+------+-----------------------+
@@ -314,7 +314,7 @@ All Modules
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                  |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+----------------------+
 | g0        | n/a   | BUFG/O          | None       |        1221 |               0 | 1221 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | nClk_CPU_BUFG        |
-| g1        | n/a   | BUFG/O          | None       |         765 |               1 |  734 |          31 |    0 |   0 |  0 |    0 |   0 |       0 | U8/Clk_CPU_BUFG      |
+| g1        | n/a   | BUFG/O          | None       |         759 |               1 |  728 |          31 |    0 |   0 |  0 |    0 |   0 |       0 | U8/Clk_CPU_BUFG      |
 | g2        | n/a   | BUFG/O          | None       |         143 |               0 |  142 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | clk_100mhz_IBUF_BUFG |
 | g3        | n/a   | BUFG/O          | None       |          35 |               3 |   35 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | U8/clkdiv_BUFG[11]   |
 | g4        | n/a   | BUFG/O          | None       |          35 |               3 |   36 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | U8/clkdiv_BUFG[6]    |

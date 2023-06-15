@@ -5,6 +5,3 @@
 
 # IP: ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
-
-# IP: ip/dist_mem_gen_0_1/dist_mem_gen_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dist_mem_gen_0 || ORIG_REF_NAME==dist_mem_gen_0} -quiet] -quiet

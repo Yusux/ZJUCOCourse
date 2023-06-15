@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../DebugPlat.srcs/sources_1/imports/lab4" \
+verilog xil_defaultlib  --include "../../../../DebugPlat.srcs/sources_1/imports/lab4" --include "../../../../DebugPlat.srcs/sources_1/imports/Material" \
 "../../../../DebugPlat.gen/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v" \
 "../../../../DebugPlat.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 "../../../../DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0_sim_netlist.v" \
