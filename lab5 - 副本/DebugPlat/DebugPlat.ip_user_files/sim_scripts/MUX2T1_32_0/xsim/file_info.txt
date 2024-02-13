@@ -1,2 +1,0 @@
-MUX2T1_32_0_sim_netlist.v,verilog,xil_defaultlib,../../../../DebugPlat.gen/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0_sim_netlist.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

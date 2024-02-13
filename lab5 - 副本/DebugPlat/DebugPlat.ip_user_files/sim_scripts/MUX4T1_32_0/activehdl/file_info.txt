@@ -1,4 +1,0 @@
-xpm_memory.sv,systemverilog,xpm,../../../../../../../../Software/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
-xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../Software/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd,
-MUX4T1_32_0_sim_netlist.v,verilog,xil_defaultlib,../../../../DebugPlat.gen/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0_sim_netlist.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
